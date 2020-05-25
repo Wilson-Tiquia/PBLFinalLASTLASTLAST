@@ -84,7 +84,7 @@
             this.extend1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.provinceCityComboBox = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.regionComboBox = new System.Windows.Forms.ComboBox();
             this.recoveredDeathPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recoveredDeathChart)).BeginInit();
             this.deathCasesPanel.SuspendLayout();
@@ -268,7 +268,7 @@
             this.deathTextBix.ForeColor = System.Drawing.SystemColors.GrayText;
             this.deathTextBix.Location = new System.Drawing.Point(16, 366);
             this.deathTextBix.Name = "deathTextBix";
-            this.deathTextBix.Size = new System.Drawing.Size(306, 40);
+            this.deathTextBix.Size = new System.Drawing.Size(310, 40);
             this.deathTextBix.TabIndex = 25;
             this.deathTextBix.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
@@ -278,7 +278,7 @@
             this.deathPanel.BackgroundImage = global::PBL.Properties.Resources.Untitled2_20200523022202;
             this.deathPanel.Location = new System.Drawing.Point(16, 423);
             this.deathPanel.Name = "deathPanel";
-            this.deathPanel.Size = new System.Drawing.Size(307, 10);
+            this.deathPanel.Size = new System.Drawing.Size(310, 10);
             this.deathPanel.TabIndex = 22;
             // 
             // provinceCityPanel
@@ -683,6 +683,105 @@
             this.provinceCityComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceCityComboBox.ForeColor = System.Drawing.Color.Gray;
             this.provinceCityComboBox.FormattingEnabled = true;
+            this.provinceCityComboBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.provinceCityComboBox.Items.AddRange(new object[] {
+            "QUEZON CITY",
+            "CITY OF MANILA",
+            "CITY OF PARAÑAQUE",
+            "CITY OF MAKATI",
+            "CITY OF MANDALUYONG",
+            "CITY OF PASIG",
+            "TAGUIG CITY",
+            "PASAY CITY",
+            "CALOOCAN CITY",
+            "CITY OF SAN JUAN",
+            "CITY OF MUNTINLUPA",
+            "CITY OF LAS PIÑAS",
+            "CITY OF VALENZUELA",
+            "CITY OF MARIKINA",
+            "CITY OF MALABON",
+            "CITY OF NAVOTAS",
+            "PATEROS",
+            "CEBU CITY",
+            "MANDAUE CITY",
+            "LAPU-LAPU CITY",
+            "CEBU PROVINCE",
+            "NEGROS ORIENTAL",
+            "BOHOL",
+            "RIZAL",
+            "LAGUNA",
+            "CAVITE",
+            "BATANGAS",
+            "QUEZON",
+            "LUCENA CITY",
+            "BULACAN",
+            "BATAAN",
+            "PAMPANGA",
+            "NUEVA ECIJA",
+            "TARLAC PROVINCE",
+            "OLONGAPO CITY",
+            "ZAMBALES",
+            "ANGELES CITY",
+            "AURORA",
+            "DAVAO CITY",
+            "DAVAO DEL NORTE",
+            "DAVAO ORIENTAL",
+            "COMPOSTELA VALLEY",
+            "DAVAO DEL SUR",
+            "DAVAO OCCIDENTAL",
+            "ILOILO CITY",
+            "ILOILO PROVINCE",
+            "ANTIQUE",
+            "BACOLOD CITY",
+            "NEGROS OCCIDENTAL",
+            "AKLAN",
+            "CAPIZ",
+            "GUIMARAS",
+            "PANGASINAN",
+            "LA UNION",
+            "DAGUPAN CITY",
+            "ILOCOS NORTE",
+            "ILOCOS SUR",
+            "ALBAY",
+            "NAGA CITY",
+            "CAMARINES SUR",
+            "CAMARINES NORTE",
+            "CATANDUANES",
+            "SORSOGON",
+            "ZAMBOANGA CITY",
+            "ZAMBOANGA DEL SUR",
+            "BAGUIO CITY",
+            "BENGUET",
+            "ABRA",
+            "IFUGAO",
+            "CAGAYAN",
+            "ISABELA",
+            "NUEVA VIZCAYA",
+            "CITY OF SANTIAGO",
+            "ORIENTAL MINDORO",
+            "MARINDUQUE",
+            "OCCIDENTAL MINDORO",
+            "PUERTO PRINCESA",
+            "ROMBLON",
+            "CAGAYAN DE ORO",
+            "MISAMIS OCCIDENTAL",
+            "ILIGAN CITY",
+            "LANAO DEL NORTE",
+            "BUKIDNON",
+            "CAMIGUIN",
+            "COTABATO CITY",
+            "COTABATO",
+            "SOUTH COTABATO",
+            "SULTAN KUDARAT",
+            "GENERAL SANTOS",
+            "SARANGANI",
+            "SAMAR",
+            "LEYTE",
+            "NORTHERN SAMAR",
+            "LANAO DEL SUR",
+            "MAGUINDANAO",
+            "SULU",
+            "BUTUAN CITY"});
             this.provinceCityComboBox.Location = new System.Drawing.Point(16, 249);
             this.provinceCityComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.provinceCityComboBox.Name = "provinceCityComboBox";
@@ -690,20 +789,37 @@
             this.provinceCityComboBox.TabIndex = 40;
             this.provinceCityComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // comboBox1
+            // regionComboBox
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.DropDownWidth = 300;
-            this.comboBox1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 133);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(311, 42);
-            this.comboBox1.TabIndex = 41;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.regionComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.regionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.regionComboBox.DropDownWidth = 300;
+            this.regionComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regionComboBox.ForeColor = System.Drawing.Color.Gray;
+            this.regionComboBox.FormattingEnabled = true;
+            this.regionComboBox.Items.AddRange(new object[] {
+            "NCR",
+            "REGION VII",
+            "REGION IV-A",
+            "REGION III",
+            "REGION VI",
+            "REGION I",
+            "REGION V",
+            "REGION IX",
+            "CAR",
+            "REGION II",
+            "REGION IV-B",
+            "REGION X",
+            "REGION XII",
+            "REGION VIII",
+            "BARMM",
+            "CARAGA"});
+            this.regionComboBox.Location = new System.Drawing.Point(15, 133);
+            this.regionComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.regionComboBox.Name = "regionComboBox";
+            this.regionComboBox.Size = new System.Drawing.Size(311, 42);
+            this.regionComboBox.TabIndex = 41;
+            this.regionComboBox.SelectedIndexChanged += new System.EventHandler(this.regionComboBox_SelectedIndexChanged);
             // 
             // Cases
             // 
@@ -713,7 +829,7 @@
             this.BackgroundImage = global::PBL.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.regionComboBox);
             this.Controls.Add(this.provinceCityComboBox);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.btnSave);
@@ -825,7 +941,7 @@
         private System.Windows.Forms.ComboBox provinceCityComboBox;
         //private System.Windows.Forms.ComboBox regionComboBox;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox regionComboBox;
         //  private System.Windows.Forms.ComboBox comboBox2;
     }
 }

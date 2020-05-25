@@ -79,7 +79,7 @@ namespace PBL
             equipmentsForm.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void regionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             StreamReader deathsStreamReader = new StreamReader("C://Death-Cases.txt");
 
