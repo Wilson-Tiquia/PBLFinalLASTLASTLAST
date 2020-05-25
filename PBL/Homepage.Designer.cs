@@ -349,6 +349,7 @@
             this.headerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.headerPicture.TabIndex = 5;
             this.headerPicture.TabStop = false;
+            this.headerPicture.Click += new System.EventHandler(this.headerPicture_Click);
             // 
             // Homepage
             // 

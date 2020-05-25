@@ -748,7 +748,7 @@
             this.cumulativePanel.Controls.Add(this.remainingTextBox);
             this.cumulativePanel.Controls.Add(this.totalTextBox);
             this.cumulativePanel.Controls.Add(this.hospitalComboBox);
-            this.cumulativePanel.Location = new System.Drawing.Point(54, 77);
+            this.cumulativePanel.Location = new System.Drawing.Point(24, 352);
             this.cumulativePanel.Name = "cumulativePanel";
             this.cumulativePanel.Size = new System.Drawing.Size(460, 342);
             this.cumulativePanel.TabIndex = 58;
@@ -884,7 +884,7 @@
             this.testPanel.Controls.Add(this.comboBox2);
             this.testPanel.Controls.Add(this.dateLabel);
             this.testPanel.Controls.Add(this.datePanel);
-            this.testPanel.Location = new System.Drawing.Point(821, 370);
+            this.testPanel.Location = new System.Drawing.Point(827, 429);
             this.testPanel.Name = "testPanel";
             this.testPanel.Size = new System.Drawing.Size(412, 316);
             this.testPanel.TabIndex = 65;
@@ -970,7 +970,7 @@
             this.closeAdd.BackColor = System.Drawing.Color.Transparent;
             this.closeAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAdd.Image = global::PBL.Properties.Resources.more;
-            this.closeAdd.Location = new System.Drawing.Point(25, 323);
+            this.closeAdd.Location = new System.Drawing.Point(5, 345);
             this.closeAdd.Name = "closeAdd";
             this.closeAdd.Size = new System.Drawing.Size(43, 42);
             this.closeAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1018,7 +1018,7 @@
             this.openAdd.BackColor = System.Drawing.Color.Transparent;
             this.openAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openAdd.Image = global::PBL.Properties.Resources.more;
-            this.openAdd.Location = new System.Drawing.Point(25, 323);
+            this.openAdd.Location = new System.Drawing.Point(5, 345);
             this.openAdd.Name = "openAdd";
             this.openAdd.Size = new System.Drawing.Size(43, 42);
             this.openAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1043,7 +1043,7 @@
             // 
             this.mapShadow.BackColor = System.Drawing.Color.Transparent;
             this.mapShadow.Image = global::PBL.Properties.Resources.shadow;
-            this.mapShadow.Location = new System.Drawing.Point(-24, 85);
+            this.mapShadow.Location = new System.Drawing.Point(34, 89);
             this.mapShadow.Name = "mapShadow";
             this.mapShadow.Size = new System.Drawing.Size(1389, 310);
             this.mapShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
