@@ -394,5 +394,17 @@
   <ItemGroup>
     <None Include="Resources\Untitled2_202005230228171.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b16d909fa4fbf4f57c549e8a956ae81c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1e72e177da44eac61f206607a320d927.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1cc48e8e7c318d7ed8a13d6ff29c4b45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\941782f60e16a9d7f9b4cea4ae7025e0.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
