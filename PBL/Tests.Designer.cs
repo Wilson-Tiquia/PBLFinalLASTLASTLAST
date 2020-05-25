@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -162,13 +162,13 @@
             this.columnHeader6,
             this.columnHeader8,
             this.columnHeader9});
-            this.listView1.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.SystemColors.Info;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(49, 91);
+            this.listView1.Location = new System.Drawing.Point(18, 91);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1185, 263);
+            this.listView1.Size = new System.Drawing.Size(1248, 263);
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -177,22 +177,22 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Hospital";
-            this.columnHeader1.Width = 243;
+            this.columnHeader1.Width = 291;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Unique Individuals";
-            this.columnHeader2.Width = 166;
+            this.columnHeader2.Width = 133;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Positive Individuals";
-            this.columnHeader3.Width = 152;
+            this.columnHeader3.Width = 142;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Negative Indivuduals";
-            this.columnHeader4.Width = 138;
+            this.columnHeader4.Width = 151;
             // 
             // columnHeader5
             // 
@@ -202,17 +202,17 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Invalid";
-            this.columnHeader6.Width = 66;
+            this.columnHeader6.Width = 79;
             // 
             // columnHeader8
             // 
             this.columnHeader8.Text = "Total Tests Conducted";
-            this.columnHeader8.Width = 144;
+            this.columnHeader8.Width = 170;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "Remaining Available Tests";
-            this.columnHeader9.Width = 214;
+            this.columnHeader9.Width = 185;
             // 
             // hospitalLabel
             // 
@@ -508,18 +508,18 @@
             this.dailyTestChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.dailyTestChart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.dailyTestChart.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
-            chartArea4.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend1);
             this.dailyTestChart.Location = new System.Drawing.Point(2, 5);
             this.dailyTestChart.Margin = new System.Windows.Forms.Padding(2);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.dailyTestChart.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.dailyTestChart.Series.Add(series1);
             this.dailyTestChart.Size = new System.Drawing.Size(1191, 305);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
@@ -1043,9 +1043,9 @@
             // 
             this.mapShadow.BackColor = System.Drawing.Color.Transparent;
             this.mapShadow.Image = global::PBL.Properties.Resources.shadow;
-            this.mapShadow.Location = new System.Drawing.Point(7, 85);
+            this.mapShadow.Location = new System.Drawing.Point(-24, 85);
             this.mapShadow.Name = "mapShadow";
-            this.mapShadow.Size = new System.Drawing.Size(1326, 310);
+            this.mapShadow.Size = new System.Drawing.Size(1389, 310);
             this.mapShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mapShadow.TabIndex = 68;
             this.mapShadow.TabStop = false;
@@ -1094,10 +1094,10 @@
             this.Controls.Add(this.openAdd);
             this.Controls.Add(this.openTest);
             this.Controls.Add(this.panel16);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.mapShadow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.mapShadow);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tests";
