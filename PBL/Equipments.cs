@@ -156,7 +156,7 @@ namespace PBL
             listView2.Visible = false;
             listViewPanel.Visible = false;
 
-            
+            //display of first default data for equipments (Abra)
 
             while (equipments.Peek() != -1)
             {
@@ -189,6 +189,8 @@ namespace PBL
             }
             equipments.Close();
             
+            //display for ppe data
+
                 string x1 = ppe.ReadLine();
                 string[] xe1 = x1.Split(',');
 
@@ -217,6 +219,7 @@ namespace PBL
 
         }
 
+        //saving new ppe data
         private void btnSave_Click(object sender, EventArgs e)
         {
 
@@ -335,7 +338,7 @@ namespace PBL
         }
 
         
-
+        //filter out specific "province" in chart
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             StreamReader equipments = new StreamReader("D://Equipments.txt");
@@ -379,6 +382,7 @@ namespace PBL
             }
         }
 
+        //saving new equipments data
         private void btnSave2_Click(object sender, EventArgs e)
         {
            //save to listview function
@@ -454,6 +458,7 @@ namespace PBL
 
         }
 
+        //para isang tawagan na lang
         private void savetolvi()
         {
             //Validation for text box it should accept numeric only
@@ -539,6 +544,7 @@ namespace PBL
 
         }
 
+        //shows and hide data or chart
         private void btnView_Click(object sender, EventArgs e)
         {
             if (btnView.Text == "View Data")
