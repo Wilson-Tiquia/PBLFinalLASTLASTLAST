@@ -9,10 +9,51 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+
 namespace PBL
 {
+   
     public partial class Tests : Form
     {
+        
+
+        public void populateHospitals()
+        {
+            List<string> hospitals = new List<string>();
+            hospitals.Add("RESEARCH INSTITUTE FOR TROPICAL MEDICINE (RITM)");
+            hospitals.Add("PHILIPPINE RED CROSS (PRC)");
+            hospitals.Add("PHILIPPINE RED CROSS LOGISTICS & MULTIPURPOSE CENTER");
+            hospitals.Add("VICENTE SOTTO MEMORIAL MEDICAL CENTER (VSMMC)");
+            hospitals.Add("LUNG CENTER OF THE PHILIPPINES(LCP)");
+            hospitals.Add("BAGUIO GENERAL HOSPITAL AND MEDICAL CENTER (BGHMC)");
+            hospitals.Add("SAN LAZARO HOSPITAL (SLH)");
+            hospitals.Add("UP NATIONAL INSTITUTES OF HEALTH (UP-NIH)");
+            hospitals.Add("WESTERN VISAYAS MEDICAL CENTER");
+            hospitals.Add("ST.LUKE’S MEDICAL CENTER - BGC(SLMC - BGC)");
+            hospitals.Add("DETOXICARE MOLECULAR DIAGNOSTICS LABORATORY");
+            hospitals.Add("SOUTHERN PHILIPPINES MEDICAL CENTER(SPMC)");
+            hospitals.Add("CHINESE GENERAL HOSPITAL (CGH)");
+            hospitals.Add("THE MEDICAL CITY(TMC)");
+            hospitals.Add("MAKATI MEDICAL CENTER");
+            hospitals.Add("V.LUNA HOSPITAL");
+            hospitals.Add("SINGAPORE DIAGNOSTICS");
+            hospitals.Add("PHILIPPINE GENOME CENTER");
+            hospitals.Add("MARIKINA MOLECULAR DIAGNOSTICS LIBRARY");
+            hospitals.Add("DE LA SALLE UNIVERSITY - CAVITE");
+            hospitals.Add("ZAMBOANGA CITY MEDICAL CENTER GENEXPERT LABORATORY");
+            hospitals.Add("LUNG CENTER OF THE PHILIPPINES GENEXPERT LABORATORY");
+            hospitals.Add("CEBU TB REFERENCE LABORATORY");
+            hospitals.Add("UP-PGH MOLECULAR LABORATORY");
+            hospitals.Add("EASTERN VISAYAS REGIONAL COVID TESTING CENTER");
+            hospitals.Add("ALLEGIANT REGIONAL CARE HOSPITAL");
+           
+            for (int i =0; i <hospitals.Count;i++)
+            {
+                hospitalComboBox.Items.Add(hospitals[i]);
+            }
+        }
+
+
         public Tests()
         {
             InitializeComponent();
@@ -46,11 +87,7 @@ namespace PBL
             equipmentsForms.Show();
         }
 
-        private void extend_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+    
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -109,15 +146,6 @@ namespace PBL
             extend1.Visible = true;
         }
 
-        private void panel16_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void topPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void map_Click_1(object sender, EventArgs e)
         {
@@ -143,10 +171,7 @@ namespace PBL
             equipmentsForm.Show();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void openAdd_Click(object sender, EventArgs e)
         {
@@ -190,7 +215,8 @@ namespace PBL
             invalidTextBox.Text = string.Empty;
             totalTextBox.Text = string.Empty;
             remainingTextBox.Text = string.Empty;
-         
+            hospitalComboBox.Focus();
+
 
         }
         private void closeAdd_Click(object sender, EventArgs e)
@@ -224,6 +250,9 @@ namespace PBL
             openAdd.Visible = true;
             closeAdd.Visible = false;
             saveButtonTest.Visible = false;
+            hospitalComboBox.SelectedIndex = -1;
+            listView1.Items.Clear();
+            allHospitals();
         }
 
         private void openTest_Click(object sender, EventArgs e)
@@ -259,11 +288,6 @@ namespace PBL
             closeTest.Visible = false;
         }
 
-        private void remainingTextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-           
-        }
         public void sort()
         {
             string hospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
@@ -281,8 +305,7 @@ namespace PBL
                 string total = splitRead[6];
                 string remaining = splitRead[7];
                 if (hospitalName == hospital)
-                {
-                    
+                {   
                     ListViewItem lvi = new ListViewItem(hospitalName);
                     lvi.SubItems.Add(unique);
                     lvi.SubItems.Add(positive);
@@ -293,8 +316,6 @@ namespace PBL
                     lvi.SubItems.Add(remaining);
                     listView1.Items.Add(lvi);
                 }
-
-
             }
             sorter.Close();
 
@@ -335,62 +356,36 @@ namespace PBL
 
             }
         }
-
         private void Tests_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
-           // WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Maximized;
             string selectedHospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
             if (selectedHospital == string.Empty)
             {
-                MessageBox.Show("ALA PA LAMAN");
                 allHospitals();
             }
-           
-        }
-
-        private void uniqueTextBox_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void positiveTextBox_TextChanged(object sender, EventArgs e)
-        {
+            populateHospitals();
           
         }
-
-        private void negativeTextBox_TextChanged(object sender, EventArgs e)
+        private void aboutUs_Click(object sender, EventArgs e)
         {
-          
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Show();
         }
 
-        private void invalidTextBox_TextChanged(object sender, EventArgs e)
+        private void saveButtonTest_Click_1(object sender, EventArgs e)
         {
-            
-
-        }
-
-        private void equivocalTextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void totalTextBox_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void saveButtonTest_Click(object sender, EventArgs e)
-        {
-            if (hospitalComboBox.SelectedIndex == -1)
+            if (hospitalComboBox.Text == string.Empty)
             {
-                MessageBox.Show("input hospital");
+                MessageBox.Show("Input Hospital");
             }
             else
             {
                 StreamWriter addTests = new StreamWriter(@"C:/Cumulative-Tests.txt", true);
                 string hospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
                 string empty = "0";
+                // check condition if walang laman set mo sa 0
                 if (uniqueTextBox.Text == string.Empty)
                 {
                     uniqueTextBox.Text = empty;
@@ -419,45 +414,46 @@ namespace PBL
                 {
                     remainingTextBox.Text = empty;
                 }
-              
+                for (int i  =0; i < hospitalComboBox.Items.Count - 1; i++) 
+                {
+                    if (hospital == hospitalComboBox.GetItemText(hospitalComboBox.Items[i]))
+                    {
+                        Console.WriteLine("meron na");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("wala pa po ");
+                    }
+                  
+                }
+                // i write line mo sa file
                 MessageBox.Show("ADDED TESTS");
-                string [] all = {hospital,",",uniqueTextBox.Text,",",positiveTextBox.Text,",",negativeTextBox.Text,",",equivocalTextBox.Text,",",invalidTextBox.Text,",",totalTextBox.Text,",",remainingTextBox.Text};
+                string[] all = { hospitalComboBox.Text, ",", uniqueTextBox.Text, ",", positiveTextBox.Text, ",", negativeTextBox.Text, ",", equivocalTextBox.Text, ",", invalidTextBox.Text, ",", totalTextBox.Text, ",", remainingTextBox.Text };
                 addTests.WriteLine();
-                for (int i = 0; i <all.Length;i++)
+                for (int i = 0; i < all.Length; i++)
                 {
                     addTests.Write(all[i]);
                 }
                 addTests.Close();
                 listView1.Items.Clear();
+                clearEntries();
                 allHospitals();
-                hospitalComboBox.SelectedIndex = -1;
-                uniqueTextBox.Text = string.Empty;
-                positiveTextBox.Text = string.Empty;
-                negativeTextBox.Text = string.Empty;
-                equivocalTextBox.Text = string.Empty;
-                invalidTextBox.Text = string.Empty;
-                totalTextBox.Text = string.Empty;
-                remainingTextBox.Text = string.Empty;
-                hospitalComboBox.Focus();
-
-
+              
             }
+
         }
 
         private void hospitalComboBox_DropDown(object sender, EventArgs e)
         {
-            
+            listView1.Items.Clear();
+            allHospitals();
+            sort();
         }
 
-        private void testPanel_Paint(object sender, PaintEventArgs e)
+        private void mapShadow_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void aboutUs_Click(object sender, EventArgs e)
-        {
-            SplashScreen aboutForm = new SplashScreen();
-            aboutForm.Show();
         }
     }
 }
