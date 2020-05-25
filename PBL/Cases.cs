@@ -11,7 +11,7 @@ namespace PBL
 
     public partial class Cases : Form
     {
-        StreamReader deathsStreamReader = new StreamReader("C://Death-Cases.txt");
+        StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
         
         public Cases()
         {
@@ -81,11 +81,11 @@ namespace PBL
 
         private void regionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            StreamReader deathsStreamReader = new StreamReader("C://Death-Cases.txt");
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
 
             provinceCityComboBox.Items.Clear();
             //gives only the specific province/city per region selected
-            if (comboBox2.Text == "BARMM")
+            if (comboBox1.Text == "BARMM")
             {
 
                 provinceCityComboBox.Items.Add("LANAO DEL SUR");
@@ -93,7 +93,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("SULU");
 
             }
-            else if (comboBox2.Text == "CAR")
+            else if (comboBox1.Text == "CAR")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("ABRA");
@@ -102,12 +102,12 @@ namespace PBL
                 provinceCityComboBox.Items.Add("IFUGAO");
 
             }
-            else if (comboBox2.Text == "CARAGA")
+            else if (comboBox1.Text == "CARAGA")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("BUTUAN CITY");
             }
-            else if (comboBox2.Text == "NCR")
+            else if (comboBox1.Text == "NCR")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("QUEZON CITY");
@@ -127,7 +127,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("CITY OF NAVOTAS");
                 provinceCityComboBox.Items.Add("PATEROS");
             }
-            else if (comboBox2.Text == "REGION I")
+            else if (comboBox1.Text == "REGION I")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("PANGASINAN");
@@ -137,7 +137,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("ILOCOS SUR");
 
             }
-            else if (comboBox2.Text == "REGION II")
+            else if (comboBox1.Text == "REGION II")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("CAGAYAN");
@@ -145,7 +145,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("NUEVA VIZCAYA");
                 provinceCityComboBox.Items.Add("CITY OF SANTIAGO");
             }
-            else if (comboBox2.Text == "REGION III")
+            else if (comboBox1.Text == "REGION III")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("BULACAN");
@@ -157,7 +157,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("ZAMBALES");
                 provinceCityComboBox.Items.Add("ANGELES CITY");
             }
-            else if (comboBox2.Text == "REGION IV-A")
+            else if (comboBox1.Text == "REGION IV-A")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("RIZAL");
@@ -167,7 +167,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("QUEZON");
                 provinceCityComboBox.Items.Add("LUCENA CITY");
             }
-            else if (comboBox2.Text == "REGION IV-B")
+            else if (comboBox1.Text == "REGION IV-B")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("ORIENTAL MINDORO");
@@ -177,13 +177,13 @@ namespace PBL
                 provinceCityComboBox.Items.Add("ROMBLON");
 
             }
-            else if (comboBox2.Text == "REGION IX")
+            else if (comboBox1.Text == "REGION IX")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("ZAMBOANGA CITY");
                 provinceCityComboBox.Items.Add("ZAMBOANGA DEL SUR");
             }
-            else if (comboBox2.Text == "REGION V")
+            else if (comboBox1.Text == "REGION V")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("ALBAY");
@@ -194,7 +194,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("SORSOGON");
 
             }
-            else if (comboBox2.Text == "REGION VI")
+            else if (comboBox1.Text == "REGION VI")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("ILOILO CITY");
@@ -207,7 +207,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("GUIMARAS");
 
             }
-            else if (comboBox2.Text == "REGION VII")
+            else if (comboBox1.Text == "REGION VII")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("CEBU CITY");
@@ -218,14 +218,14 @@ namespace PBL
                 provinceCityComboBox.Items.Add("BOHOL");
 
             }
-            else if (comboBox2.Text == "REGION VIII")
+            else if (comboBox1.Text == "REGION VIII")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("SAMAR");
                 provinceCityComboBox.Items.Add("LEYTE");
                 provinceCityComboBox.Items.Add("NORTHERN SAMAR");
             }
-            else if (comboBox2.Text == "REGION X")
+            else if (comboBox1.Text == "REGION X")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("CAGAYAN DE ORO");
@@ -235,7 +235,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("BUKIDNON");
                 provinceCityComboBox.Items.Add("CAMIGUIN");
             }
-            else if (comboBox2.Text == "REGION XI")
+            else if (comboBox1.Text == "REGION XI")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("DAVAO CITY");
@@ -246,7 +246,7 @@ namespace PBL
                 provinceCityComboBox.Items.Add("DAVAO DEL NORTE");
 
             }
-            else if (comboBox2.Text == "REGION XII")
+            else if (comboBox1.Text == "REGION XII")
             {
                 provinceCityComboBox.Items.Clear();
                 provinceCityComboBox.Items.Add("COTABATO CITY");
@@ -258,11 +258,11 @@ namespace PBL
             }
 
             //filter purposes - to find region for specific cases
-            if (comboBox2.SelectedIndex > -1)
+            if (comboBox1.SelectedIndex > -1)
             {
                 listView2.Items.Clear();
                 listView1.Items.Clear();
-                string tofind = comboBox2.SelectedItem.ToString();
+                string tofind = comboBox1.SelectedItem.ToString();
 
 
 
@@ -522,7 +522,7 @@ namespace PBL
 
             int totalRC = 0;
             int totalDC = 0;
-            if (comboBox2.SelectedIndex > 1)
+            if (comboBox1.SelectedIndex > 1)
             {
                 listView2.Items.Clear();
                 listView1.Items.Clear();
@@ -598,7 +598,7 @@ namespace PBL
         //loads only the region and province selected in the combobox
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-           StreamReader deathsStreamReader = new StreamReader("C://Death-Cases.txt");
+           StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
             
             if (provinceCityComboBox.SelectedIndex > -1)
             {
@@ -681,7 +681,7 @@ namespace PBL
 
 
             listView2.SelectedItems.Clear();
-           StreamWriter sw = new StreamWriter("C://Death-Cases.txt", false);
+           StreamWriter sw = new StreamWriter("D://Death-Cases.txt", false);
             
 
 
@@ -724,7 +724,7 @@ namespace PBL
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
-            string cmb1 = comboBox2.Text.ToString();
+            string cmb1 = comboBox1.Text.ToString();
             string cmb2 = provinceCityComboBox.Text.ToString();
             int val1;
             int val2;
@@ -749,7 +749,7 @@ namespace PBL
 
 
 
-            StreamReader deathsStreamReader = new StreamReader("C://Death-Cases.txt");
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
             
             listView2.Items.Clear();
             listView1.Items.Clear();
@@ -798,7 +798,7 @@ namespace PBL
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
 
-            string cmb1 = comboBox2.Text.ToString();
+            string cmb1 = comboBox1.Text.ToString();
             string cmb2 = provinceCityComboBox.Text.ToString();
             int val1;
             int val2;
@@ -821,7 +821,7 @@ namespace PBL
             }
 
 
-            StreamReader deathsStreamReader = new StreamReader("C://Death-Cases.txt");
+            StreamReader deathsStreamReader = new StreamReader("D://Death-Cases.txt");
 
             listView2.Items.Clear();
             listView1.Items.Clear();
