@@ -308,7 +308,7 @@ namespace PBL
         }
         public void allHospitals()
         {
-            StreamReader allHospitals = new StreamReader(@"D:\Equipments.txt");
+            StreamReader allHospitals = new StreamReader(@"C:/Cumulative-Tests.txt");
             allHospitals.ReadLine();
             
             while (allHospitals.Peek()!=-1)
