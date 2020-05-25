@@ -73,5 +73,10 @@ namespace PBL
             SplashScreen aboutForm = new SplashScreen();
             aboutForm.Show();
         }
+
+        private void headerPicture_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

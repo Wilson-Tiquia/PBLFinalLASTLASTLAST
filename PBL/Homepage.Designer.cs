@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.border = new System.Windows.Forms.Panel();
+            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.hideButton = new System.Windows.Forms.PictureBox();
             this.minimizeButton = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.PictureBox();
@@ -50,8 +51,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.headerPicture = new System.Windows.Forms.PictureBox();
-            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.border.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -65,7 +66,6 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headerPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             this.SuspendLayout();
             // 
             // border
@@ -81,6 +81,18 @@
             this.border.Name = "border";
             this.border.Size = new System.Drawing.Size(1317, 33);
             this.border.TabIndex = 2;
+            // 
+            // aboutUs
+            // 
+            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
+            this.aboutUs.Name = "aboutUs";
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
+            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutUs.TabIndex = 3;
+            this.aboutUs.TabStop = false;
+            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
             // 
             // hideButton
             // 
@@ -331,24 +343,13 @@
             // headerPicture
             // 
             this.headerPicture.Image = global::PBL.Properties.Resources.option_4;
-            this.headerPicture.Location = new System.Drawing.Point(0, -77);
+            this.headerPicture.Location = new System.Drawing.Point(-6, 21);
             this.headerPicture.Name = "headerPicture";
-            this.headerPicture.Size = new System.Drawing.Size(1317, 817);
+            this.headerPicture.Size = new System.Drawing.Size(1325, 627);
             this.headerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.headerPicture.TabIndex = 5;
             this.headerPicture.TabStop = false;
-            // 
-            // aboutUs
-            // 
-            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
-            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
-            this.aboutUs.Name = "aboutUs";
-            this.aboutUs.Size = new System.Drawing.Size(47, 28);
-            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.aboutUs.TabIndex = 3;
-            this.aboutUs.TabStop = false;
-            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
+            this.headerPicture.Click += new System.EventHandler(this.headerPicture_Click);
             // 
             // Homepage
             // 
@@ -369,6 +370,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
             this.border.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
@@ -386,7 +388,6 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headerPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             this.ResumeLayout(false);
 
         }
