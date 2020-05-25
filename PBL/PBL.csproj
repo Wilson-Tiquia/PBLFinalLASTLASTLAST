@@ -269,9 +269,6 @@
     <None Include="Resources\final option.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\option 4.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\philippine flag.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -420,6 +417,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option 4.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
