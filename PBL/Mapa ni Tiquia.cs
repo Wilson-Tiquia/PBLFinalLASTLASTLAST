@@ -86,11 +86,11 @@ namespace PBL
                 string input = read.ReadLine();
                 string[] splitInput = input.Split(',');
                 string newSplit = splitInput[1].Replace("CITY OF ", "").Replace(" CITY", "").ToLower();
-                temporary = provinceMapComboBox.Text.ToLower();
+                temporary = provinceMapComboBox.Text.ToLower().Replace(" city","");
                 string caseSplitNew = splitInput[2].Replace(",", "");
                 if (temporary != newSplit)
                 {
-                    
+                    Console.WriteLine(temporary + "         " + newSplit);
                     tCase.Text = "Total Case: " + sum.ToString();
                 }
                 if (temporary == newSplit)
@@ -103,6 +103,7 @@ namespace PBL
                 string selectedPlace = provinceMapComboBox.Text.ToLower();
                 string caseSaLugar = "0";
                 provincePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                
                 if (sum >= 0 && sum <= 500)
                 {
                     caseSaLugar = "0";
@@ -532,7 +533,7 @@ namespace PBL
                 totalCASE += a;
                 totalCases.Text = totalCASE.ToString();
                 MessageBox.Show("Added Case");
-                string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text, ",", caseInputTextBox.Text };
+                string[] addedCase = { regionComboBox.Text, ",", provinceComboBox.Text.Replace(" City",""), ",", caseInputTextBox.Text };
                 StreamWriter addUser = new StreamWriter(@"C:\Total-Cases.txt", true);
                 addUser.WriteLine();
                 for (int i = 0; i < addedCase.Length; i++)
