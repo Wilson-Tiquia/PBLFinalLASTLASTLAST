@@ -95,6 +95,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.mapShadow = new System.Windows.Forms.PictureBox();
+            this.backMap = new System.Windows.Forms.PictureBox();
             this.panelOfImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.case1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.case2)).BeginInit();
@@ -129,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backMap)).BeginInit();
             this.SuspendLayout();
             // 
             // islandLabel
@@ -337,7 +339,7 @@
             this.btnSave.TabIndex = 62;
             this.btnSave.Text = "Back";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.backButton_Click);
+            this.btnSave.Click += new System.EventHandler(this.backMap_Click);
             // 
             // tCase
             // 
@@ -936,6 +938,19 @@
             this.mapShadow.TabStop = false;
             this.mapShadow.Visible = false;
             // 
+            // backMap
+            // 
+            this.backMap.BackColor = System.Drawing.Color.Transparent;
+            this.backMap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backMap.Image = global::PBL.Properties.Resources.back;
+            this.backMap.Location = new System.Drawing.Point(5, 101);
+            this.backMap.Name = "backMap";
+            this.backMap.Size = new System.Drawing.Size(42, 37);
+            this.backMap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backMap.TabIndex = 39;
+            this.backMap.TabStop = false;
+            this.backMap.Click += new System.EventHandler(this.backMap_Click);
+            // 
             // Mapa_ni_Tiquia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -944,6 +959,7 @@
             this.BackgroundImage = global::PBL.Properties.Resources._72969fd2668e33d52f215a3573b485a0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1290, 770);
+            this.Controls.Add(this.backMap);
             this.Controls.Add(this.extend2);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.casesPanel);
@@ -1016,6 +1032,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backMap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1088,5 +1105,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox mapShadow;
         private System.Windows.Forms.PictureBox aboutUs;
+        private System.Windows.Forms.PictureBox backMap;
     }
 }

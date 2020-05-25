@@ -168,6 +168,7 @@ namespace PBL
             currentIsland.Visible = true;
             panelOfImage.Visible = true;
             mapShadow.Visible = true;
+            backMap.Visible = true;
             
         }
         public void hideMap ()
@@ -181,6 +182,7 @@ namespace PBL
             currentIsland.Visible = false;
             panelOfImage.Visible = false;
             mapShadow.Visible = false;
+            backMap.Visible = false;
             // vvisible mo ung orig
             islandLabel.Visible = true;
             islandComboBox.Visible = true;
@@ -576,6 +578,17 @@ namespace PBL
             caseInputTextBox.Text = string.Empty;
             islandComboBox.Focus();
         }
+
+        private void backMap_Click(object sender, EventArgs e)
+        {
+            hideMap();
+            islandComboBox.SelectedIndex = -1;
+            regionComboBox.SelectedIndex = -1;
+            provinceComboBox.SelectedIndex = -1;
+            caseInputTextBox.Text = string.Empty;
+            islandComboBox.Focus();
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
