@@ -490,7 +490,7 @@ namespace PBL
             hideMap();
             populateIsland();
             FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
+          //  WindowState = FormWindowState.Maximized;
             totalCASE += totalAddedCase();
             totalCases.Text = totalCASE.ToString();
             
@@ -660,6 +660,12 @@ namespace PBL
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Minimized;
             TopMost = false;
+        }
+
+        private void aboutUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Show();
         }
 
         private void exit_Click(object sender, EventArgs e)

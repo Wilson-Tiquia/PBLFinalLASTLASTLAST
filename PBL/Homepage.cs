@@ -67,5 +67,11 @@ namespace PBL
             WindowState = FormWindowState.Minimized;
             TopMost = false;
         }
+
+        private void aboutUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Show();
+        }
     }
 }

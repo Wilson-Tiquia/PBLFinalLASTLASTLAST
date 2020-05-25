@@ -61,6 +61,7 @@
             this.topPanel = new System.Windows.Forms.Panel();
             this.minimize = new System.Windows.Forms.PictureBox();
             this.maximize = new System.Windows.Forms.PictureBox();
+            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.hide = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -104,6 +105,7 @@
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.panel16.SuspendLayout();
@@ -184,6 +186,7 @@
             // islandComboBox
             // 
             this.islandComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.islandComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.islandComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.islandComboBox.DropDownWidth = 300;
             this.islandComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,6 +203,7 @@
             // regionComboBox
             // 
             this.regionComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.regionComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.regionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.regionComboBox.DropDownWidth = 400;
             this.regionComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,6 +219,7 @@
             // provinceComboBox
             // 
             this.provinceComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.provinceComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.provinceComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.provinceComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceComboBox.ForeColor = System.Drawing.Color.Gray;
@@ -266,6 +271,7 @@
             // regionMapComboBox
             // 
             this.regionMapComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.regionMapComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.regionMapComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.regionMapComboBox.DropDownWidth = 400;
             this.regionMapComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -282,6 +288,7 @@
             // provinceMapComboBox
             // 
             this.provinceMapComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.provinceMapComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.provinceMapComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.provinceMapComboBox.DropDownWidth = 400;
             this.provinceMapComboBox.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -522,6 +529,7 @@
             this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.topPanel.Controls.Add(this.minimize);
             this.topPanel.Controls.Add(this.maximize);
+            this.topPanel.Controls.Add(this.aboutUs);
             this.topPanel.Controls.Add(this.hide);
             this.topPanel.Controls.Add(this.exit);
             this.topPanel.Location = new System.Drawing.Point(-2, -2);
@@ -551,6 +559,18 @@
             this.maximize.TabIndex = 2;
             this.maximize.TabStop = false;
             this.maximize.Click += new System.EventHandler(this.maximize_Click);
+            // 
+            // aboutUs
+            // 
+            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
+            this.aboutUs.Name = "aboutUs";
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
+            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutUs.TabIndex = 2;
+            this.aboutUs.TabStop = false;
+            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
             // 
             // hide
             // 
@@ -886,9 +906,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::PBL.Properties.Resources.Untitled2_20200523023156;
-            this.pictureBox1.Location = new System.Drawing.Point(675, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(671, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(621, 581);
+            this.pictureBox1.Size = new System.Drawing.Size(629, 601);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
@@ -971,6 +991,7 @@
             this.topPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.panel16.ResumeLayout(false);
@@ -1066,5 +1087,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox mapShadow;
+        private System.Windows.Forms.PictureBox aboutUs;
     }
 }

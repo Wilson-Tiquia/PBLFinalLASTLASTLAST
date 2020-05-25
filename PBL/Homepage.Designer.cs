@@ -41,8 +41,8 @@
             this.casesLabel = new System.Windows.Forms.Label();
             this.casesButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.mapLabel = new System.Windows.Forms.Label();
             this.mapPicture = new System.Windows.Forms.PictureBox();
+            this.mapLabel = new System.Windows.Forms.Label();
             this.mapButton = new System.Windows.Forms.Button();
             this.equipmentsLabel = new System.Windows.Forms.Label();
             this.equipmentsButton = new System.Windows.Forms.Button();
@@ -50,6 +50,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.headerPicture = new System.Windows.Forms.PictureBox();
+            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.border.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
@@ -64,12 +65,14 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headerPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             this.SuspendLayout();
             // 
             // border
             // 
             this.border.BackColor = System.Drawing.Color.LightGray;
             this.border.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.border.Controls.Add(this.aboutUs);
             this.border.Controls.Add(this.hideButton);
             this.border.Controls.Add(this.minimizeButton);
             this.border.Controls.Add(this.exitButton);
@@ -131,6 +134,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(129)))), ((int)(((byte)(147)))));
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.label1.Location = new System.Drawing.Point(81, 181);
@@ -194,6 +198,7 @@
             // 
             this.casesLabel.AutoSize = true;
             this.casesLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(66)))), ((int)(((byte)(93)))));
+            this.casesLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.casesLabel.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.casesLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.casesLabel.Location = new System.Drawing.Point(71, 179);
@@ -224,18 +229,6 @@
             this.panel3.Size = new System.Drawing.Size(323, 241);
             this.panel3.TabIndex = 6;
             // 
-            // mapLabel
-            // 
-            this.mapLabel.AutoSize = true;
-            this.mapLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.mapLabel.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mapLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.mapLabel.Location = new System.Drawing.Point(12, 178);
-            this.mapLabel.Name = "mapLabel";
-            this.mapLabel.Size = new System.Drawing.Size(285, 28);
-            this.mapLabel.TabIndex = 7;
-            this.mapLabel.Text = "Total Cases in the Philippines";
-            // 
             // mapPicture
             // 
             this.mapPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
@@ -248,6 +241,19 @@
             this.mapPicture.TabIndex = 5;
             this.mapPicture.TabStop = false;
             this.mapPicture.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // mapLabel
+            // 
+            this.mapLabel.AutoSize = true;
+            this.mapLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
+            this.mapLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mapLabel.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.mapLabel.Location = new System.Drawing.Point(12, 178);
+            this.mapLabel.Name = "mapLabel";
+            this.mapLabel.Size = new System.Drawing.Size(285, 28);
+            this.mapLabel.TabIndex = 7;
+            this.mapLabel.Text = "Total Cases in the Philippines";
             // 
             // mapButton
             // 
@@ -265,6 +271,7 @@
             // 
             this.equipmentsLabel.AutoSize = true;
             this.equipmentsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(158)))), ((int)(((byte)(176)))));
+            this.equipmentsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.equipmentsLabel.Font = new System.Drawing.Font("Bernard MT Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipmentsLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.equipmentsLabel.Location = new System.Drawing.Point(45, 180);
@@ -331,6 +338,18 @@
             this.headerPicture.TabIndex = 5;
             this.headerPicture.TabStop = false;
             // 
+            // aboutUs
+            // 
+            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
+            this.aboutUs.Name = "aboutUs";
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
+            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutUs.TabIndex = 3;
+            this.aboutUs.TabStop = false;
+            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +386,7 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headerPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -394,5 +414,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox headerPicture;
+        private System.Windows.Forms.PictureBox aboutUs;
     }
 }

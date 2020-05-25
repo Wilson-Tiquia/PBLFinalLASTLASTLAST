@@ -453,5 +453,11 @@ namespace PBL
         {
 
         }
+
+        private void aboutUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Show();
+        }
     }
 }

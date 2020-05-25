@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -65,6 +65,7 @@
             this.dateLabel = new System.Windows.Forms.Label();
             this.dailyTestChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -111,6 +112,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -227,6 +229,7 @@
             // hospitalComboBox
             // 
             this.hospitalComboBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.hospitalComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hospitalComboBox.DropDownHeight = 300;
             this.hospitalComboBox.DropDownWidth = 500;
             this.hospitalComboBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -475,8 +478,9 @@
             // comboBox2
             // 
             this.comboBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox2.DropDownHeight = 300;
-            this.comboBox2.DropDownWidth = 500;
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox2.DropDownHeight = 200;
+            this.comboBox2.DropDownWidth = 50;
             this.comboBox2.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.ForeColor = System.Drawing.Color.Gray;
             this.comboBox2.FormattingEnabled = true;
@@ -484,7 +488,7 @@
             this.comboBox2.Location = new System.Drawing.Point(29, 55);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(295, 33);
+            this.comboBox2.Size = new System.Drawing.Size(332, 33);
             this.comboBox2.TabIndex = 27;
             // 
             // dateLabel
@@ -504,18 +508,18 @@
             this.dailyTestChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.dailyTestChart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.dailyTestChart.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
-            chartArea1.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend4);
             this.dailyTestChart.Location = new System.Drawing.Point(2, 5);
             this.dailyTestChart.Margin = new System.Windows.Forms.Padding(2);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.dailyTestChart.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.dailyTestChart.Series.Add(series4);
             this.dailyTestChart.Size = new System.Drawing.Size(1191, 305);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
@@ -524,6 +528,7 @@
             // 
             this.topPanel.BackColor = System.Drawing.Color.LightGray;
             this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.topPanel.Controls.Add(this.aboutUs);
             this.topPanel.Controls.Add(this.pictureBox6);
             this.topPanel.Controls.Add(this.pictureBox4);
             this.topPanel.Controls.Add(this.pictureBox1);
@@ -533,6 +538,18 @@
             this.topPanel.Size = new System.Drawing.Size(1317, 33);
             this.topPanel.TabIndex = 52;
             this.topPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.topPanel_Paint);
+            // 
+            // aboutUs
+            // 
+            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
+            this.aboutUs.Name = "aboutUs";
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
+            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutUs.TabIndex = 71;
+            this.aboutUs.TabStop = false;
+            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
             // 
             // pictureBox6
             // 
@@ -852,7 +869,7 @@
             this.conductedTextBox.ForeColor = System.Drawing.Color.Gray;
             this.conductedTextBox.Location = new System.Drawing.Point(32, 239);
             this.conductedTextBox.Name = "conductedTextBox";
-            this.conductedTextBox.Size = new System.Drawing.Size(292, 32);
+            this.conductedTextBox.Size = new System.Drawing.Size(329, 32);
             this.conductedTextBox.TabIndex = 63;
             // 
             // testPanel
@@ -867,9 +884,9 @@
             this.testPanel.Controls.Add(this.comboBox2);
             this.testPanel.Controls.Add(this.dateLabel);
             this.testPanel.Controls.Add(this.datePanel);
-            this.testPanel.Location = new System.Drawing.Point(865, 433);
+            this.testPanel.Location = new System.Drawing.Point(821, 370);
             this.testPanel.Name = "testPanel";
-            this.testPanel.Size = new System.Drawing.Size(368, 316);
+            this.testPanel.Size = new System.Drawing.Size(412, 316);
             this.testPanel.TabIndex = 65;
             this.testPanel.Visible = false;
             this.testPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.testPanel_Paint);
@@ -878,6 +895,7 @@
             // 
             this.dateTimePicker1.BackColor = System.Drawing.Color.Gainsboro;
             this.dateTimePicker1.BorderRadius = 0;
+            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dateTimePicker1.Font = new System.Drawing.Font("Impact", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.ForeColor = System.Drawing.Color.Gray;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -885,7 +903,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(31, 148);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(293, 36);
+            this.dateTimePicker1.Size = new System.Drawing.Size(330, 36);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Value = new System.DateTime(2020, 5, 25, 13, 35, 49, 408);
             // 
@@ -895,7 +913,7 @@
             this.conductedPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("conductedPanel.BackgroundImage")));
             this.conductedPanel.Location = new System.Drawing.Point(31, 280);
             this.conductedPanel.Name = "conductedPanel";
-            this.conductedPanel.Size = new System.Drawing.Size(292, 10);
+            this.conductedPanel.Size = new System.Drawing.Size(329, 10);
             this.conductedPanel.TabIndex = 62;
             // 
             // panel11
@@ -905,7 +923,7 @@
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Location = new System.Drawing.Point(29, 98);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(295, 10);
+            this.panel11.Size = new System.Drawing.Size(332, 10);
             this.panel11.TabIndex = 26;
             // 
             // panel12
@@ -923,7 +941,7 @@
             this.datePanel.Controls.Add(this.panel15);
             this.datePanel.Location = new System.Drawing.Point(33, 190);
             this.datePanel.Name = "datePanel";
-            this.datePanel.Size = new System.Drawing.Size(290, 10);
+            this.datePanel.Size = new System.Drawing.Size(327, 10);
             this.datePanel.TabIndex = 26;
             // 
             // panel15
@@ -1088,6 +1106,7 @@
             this.Load += new System.EventHandler(this.Tests_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).EndInit();
             this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1197,5 +1216,6 @@
         private System.Windows.Forms.PictureBox mapShadow;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox aboutUs;
     }
 }

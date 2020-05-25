@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtwardbeds = new System.Windows.Forms.TextBox();
@@ -110,6 +110,7 @@
             this.extend1 = new System.Windows.Forms.PictureBox();
             this.btnSave2 = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
+            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
@@ -128,6 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.equipmentsButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -388,22 +390,22 @@
             this.chart1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
             this.chart1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.chart1.BorderlineColor = System.Drawing.Color.Black;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(98, 192);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series1.Legend = "Legend1";
-            series1.Name = "Total";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Occupied";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series4.Legend = "Legend1";
+            series4.Name = "Total";
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Occupied";
+            this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
             this.chart1.Size = new System.Drawing.Size(1094, 217);
             this.chart1.TabIndex = 47;
             this.chart1.Text = "chart1";
@@ -653,17 +655,17 @@
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.chart2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.chart2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(194)))), ((int)(((byte)(205)))));
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            chartArea4.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart2.Legends.Add(legend4);
             this.chart2.Location = new System.Drawing.Point(98, 532);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Personal Protective Equipment";
-            this.chart2.Series.Add(series3);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Personal Protective Equipment";
+            this.chart2.Series.Add(series6);
             this.chart2.Size = new System.Drawing.Size(1091, 223);
             this.chart2.TabIndex = 49;
             this.chart2.Text = "chart2";
@@ -684,6 +686,7 @@
             // 
             this.topPanel.BackColor = System.Drawing.Color.LightGray;
             this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.topPanel.Controls.Add(this.aboutUs);
             this.topPanel.Controls.Add(this.pictureBox6);
             this.topPanel.Controls.Add(this.pictureBox4);
             this.topPanel.Controls.Add(this.pictureBox1);
@@ -1021,6 +1024,18 @@
             this.btnView.UseVisualStyleBackColor = false;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
+            // aboutUs
+            // 
+            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
+            this.aboutUs.Name = "aboutUs";
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
+            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutUs.TabIndex = 73;
+            this.aboutUs.TabStop = false;
+            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
+            // 
             // Equipments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1104,6 +1119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.equipmentsButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1185,5 +1201,6 @@
         private System.Windows.Forms.PictureBox extend1;
         private System.Windows.Forms.Button btnSave2;
         private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.PictureBox aboutUs;
     }
 }

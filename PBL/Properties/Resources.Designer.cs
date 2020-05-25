@@ -273,6 +273,16 @@ namespace PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Employee {
+            get {
+                object obj = ResourceManager.GetObject("Employee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap equipments {
             get {
                 object obj = ResourceManager.GetObject("equipments", resourceCulture);
@@ -306,6 +316,26 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("green-circle-button-blank-web-internet-icon-vector-13228683-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information {
+            get {
+                object obj = ResourceManager.GetObject("information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information__1_ {
+            get {
+                object obj = ResourceManager.GetObject("information (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -536,6 +566,16 @@ namespace PBL.Properties {
         internal static System.Drawing.Bitmap tools_and_utensils {
             get {
                 object obj = ResourceManager.GetObject("tools-and-utensils", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ui {
+            get {
+                object obj = ResourceManager.GetObject("ui", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
