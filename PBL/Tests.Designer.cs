@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -94,6 +94,7 @@
             this.conductedLabel = new System.Windows.Forms.Label();
             this.conductedTextBox = new System.Windows.Forms.TextBox();
             this.testPanel = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.conductedPanel = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -109,7 +110,6 @@
             this.mapShadow = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
@@ -240,6 +240,37 @@
             this.hospitalComboBox.FormattingEnabled = true;
             this.hospitalComboBox.IntegralHeight = false;
             this.hospitalComboBox.ItemHeight = 37;
+            this.hospitalComboBox.Items.AddRange(new object[] {
+            "ALLEGIANT REGIONAL CARE HOSPITAL",
+            "BAGUIO GENERAL HOSPITAL AND MEDICAL CENTER (BGHMC)",
+            "BICOL REGIONAL DIAGNOSTIC AND REFERENCE LABORATORY (BRDRL)",
+            "BICOL REGIONAL DIAGNOSTIC AND REFERENCE LABORATORY (BRDRL)",
+            "CEBU TB REFERENCE LABORATORY",
+            "CHINESE GENERAL HOSPITAL (CGH)",
+            "DE LA SALLE UNIVERSITY - CAVITE",
+            "DETOXICARE MOLECULAR DIAGNOSTICS LABORATORY",
+            "EASTERN VISAYAS REGIONAL COVID TESTING CENTER",
+            "JOSE B. LINGAD MEMORIAL REGIONAL HOSPITAL",
+            "LUNG CENTER OF THE PHILIPPINES (LCP)",
+            "LUNG CENTER OF THE PHILIPPINES GENEXPERT LABORATORY",
+            "MAKATI MEDICAL CENTER",
+            "MARIKINA MOLECULAR DIAGNOSTICS LIBRARY",
+            "PHILIPPINE GENOME CENTER",
+            "PHILIPPINE RED CROSS (PRC)",
+            "PHILIPPINE RED CROSS LOGISTICS & MULTIPURPOSE CENTER",
+            "RESEARCH INSTITUTE FOR TROPICAL MEDICINE (RITM)",
+            "SAN LAZARO HOSPITAL (SLH)",
+            "SINGAPORE DIAGNOSTICS",
+            "SOUTHERN PHILIPPINES MEDICAL CENTER (SPMC)",
+            "ST. LUKE’S MEDICAL CENTER - BGC (SLMC-BGC)",
+            "ST. LUKE’S MEDICAL CENTER - QUEZON CITY (SLMC-QC)",
+            "THE MEDICAL CITY (TMC)",
+            "UP-PGH MOLECULAR LABORATORY",
+            "UP NATIONAL INSTITUTES OF HEALTH (UP-NIH)",
+            "V.LUNA HOSPITAL",
+            "VICENTE SOTTO MEMORIAL MEDICAL CENTER (VSMMC)",
+            "WESTERN VISAYAS MEDICAL CENTER",
+            "ZAMBOANGA CITY MEDICAL CENTER GENEXPERT LABORATORY"});
             this.hospitalComboBox.Location = new System.Drawing.Point(39, 66);
             this.hospitalComboBox.Margin = new System.Windows.Forms.Padding(0);
             this.hospitalComboBox.Name = "hospitalComboBox";
@@ -488,17 +519,17 @@
             this.dailyTestChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.dailyTestChart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.dailyTestChart.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
-            chartArea1.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend2);
             this.dailyTestChart.Location = new System.Drawing.Point(3, 8);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.dailyTestChart.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.dailyTestChart.Series.Add(series2);
             this.dailyTestChart.Size = new System.Drawing.Size(1786, 469);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
@@ -896,6 +927,13 @@
             this.testPanel.TabIndex = 65;
             this.testPanel.Visible = false;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(50, 248);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(455, 26);
+            this.dateTimePicker1.TabIndex = 64;
+            // 
             // conductedPanel
             // 
             this.conductedPanel.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -1075,13 +1113,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 69;
             this.pictureBox7.TabStop = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(50, 248);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(455, 26);
-            this.dateTimePicker1.TabIndex = 64;
             // 
             // Tests
             // 
