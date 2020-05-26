@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -94,6 +94,7 @@
             this.conductedLabel = new System.Windows.Forms.Label();
             this.conductedTextBox = new System.Windows.Forms.TextBox();
             this.testPanel = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.conductedPanel = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -109,7 +110,7 @@
             this.mapShadow = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.endUs = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
@@ -136,6 +137,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -144,10 +146,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Location = new System.Drawing.Point(759, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(506, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(479, 75);
+            this.label1.Size = new System.Drawing.Size(318, 48);
             this.label1.TabIndex = 8;
             this.label1.Text = "CUMULATIVE TESTS";
             // 
@@ -167,10 +168,9 @@
             this.listView1.ForeColor = System.Drawing.SystemColors.Info;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(74, 140);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listView1.Location = new System.Drawing.Point(49, 91);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1776, 402);
+            this.listView1.Size = new System.Drawing.Size(1185, 263);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -222,10 +222,9 @@
             this.hospitalLabel.BackColor = System.Drawing.Color.Transparent;
             this.hospitalLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hospitalLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.hospitalLabel.Location = new System.Drawing.Point(38, 17);
-            this.hospitalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hospitalLabel.Location = new System.Drawing.Point(25, 11);
             this.hospitalLabel.Name = "hospitalLabel";
-            this.hospitalLabel.Size = new System.Drawing.Size(119, 37);
+            this.hospitalLabel.Size = new System.Drawing.Size(78, 25);
             this.hospitalLabel.TabIndex = 25;
             this.hospitalLabel.Text = "Hospital";
             // 
@@ -239,11 +238,11 @@
             this.hospitalComboBox.ForeColor = System.Drawing.Color.Gray;
             this.hospitalComboBox.FormattingEnabled = true;
             this.hospitalComboBox.IntegralHeight = false;
-            this.hospitalComboBox.ItemHeight = 37;
-            this.hospitalComboBox.Location = new System.Drawing.Point(39, 66);
+            this.hospitalComboBox.ItemHeight = 25;
+            this.hospitalComboBox.Location = new System.Drawing.Point(26, 43);
             this.hospitalComboBox.Margin = new System.Windows.Forms.Padding(0);
             this.hospitalComboBox.Name = "hospitalComboBox";
-            this.hospitalComboBox.Size = new System.Drawing.Size(612, 45);
+            this.hospitalComboBox.Size = new System.Drawing.Size(409, 33);
             this.hospitalComboBox.Sorted = true;
             this.hospitalComboBox.TabIndex = 27;
             this.hospitalComboBox.DropDown += new System.EventHandler(this.hospitalComboBox_DropDown);
@@ -255,10 +254,9 @@
             this.uniqueLabel.BackColor = System.Drawing.Color.Transparent;
             this.uniqueLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uniqueLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.uniqueLabel.Location = new System.Drawing.Point(34, 160);
-            this.uniqueLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.uniqueLabel.Location = new System.Drawing.Point(23, 104);
             this.uniqueLabel.Name = "uniqueLabel";
-            this.uniqueLabel.Size = new System.Drawing.Size(109, 37);
+            this.uniqueLabel.Size = new System.Drawing.Size(72, 25);
             this.uniqueLabel.TabIndex = 28;
             this.uniqueLabel.Text = "Unique ";
             // 
@@ -267,10 +265,9 @@
             this.uniqueTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.uniqueTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uniqueTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.uniqueTextBox.Location = new System.Drawing.Point(38, 208);
-            this.uniqueTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uniqueTextBox.Location = new System.Drawing.Point(25, 135);
             this.uniqueTextBox.Name = "uniqueTextBox";
-            this.uniqueTextBox.Size = new System.Drawing.Size(115, 44);
+            this.uniqueTextBox.Size = new System.Drawing.Size(78, 32);
             this.uniqueTextBox.TabIndex = 30;
             // 
             // positiveTextBox
@@ -278,10 +275,9 @@
             this.positiveTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.positiveTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.positiveTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.positiveTextBox.Location = new System.Drawing.Point(168, 208);
-            this.positiveTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.positiveTextBox.Location = new System.Drawing.Point(112, 135);
             this.positiveTextBox.Name = "positiveTextBox";
-            this.positiveTextBox.Size = new System.Drawing.Size(103, 44);
+            this.positiveTextBox.Size = new System.Drawing.Size(70, 32);
             this.positiveTextBox.TabIndex = 30;
             // 
             // positiveLabel
@@ -290,10 +286,9 @@
             this.positiveLabel.BackColor = System.Drawing.Color.Transparent;
             this.positiveLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.positiveLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.positiveLabel.Location = new System.Drawing.Point(165, 162);
-            this.positiveLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.positiveLabel.Location = new System.Drawing.Point(110, 105);
             this.positiveLabel.Name = "positiveLabel";
-            this.positiveLabel.Size = new System.Drawing.Size(118, 37);
+            this.positiveLabel.Size = new System.Drawing.Size(80, 25);
             this.positiveLabel.TabIndex = 28;
             this.positiveLabel.Text = "Positive ";
             // 
@@ -302,10 +297,9 @@
             this.negativeTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.negativeTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.negativeTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.negativeTextBox.Location = new System.Drawing.Point(285, 208);
-            this.negativeTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.negativeTextBox.Location = new System.Drawing.Point(190, 135);
             this.negativeTextBox.Name = "negativeTextBox";
-            this.negativeTextBox.Size = new System.Drawing.Size(126, 44);
+            this.negativeTextBox.Size = new System.Drawing.Size(85, 32);
             this.negativeTextBox.TabIndex = 30;
             // 
             // negativeLabel
@@ -314,10 +308,9 @@
             this.negativeLabel.BackColor = System.Drawing.Color.Transparent;
             this.negativeLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.negativeLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.negativeLabel.Location = new System.Drawing.Point(282, 162);
-            this.negativeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.negativeLabel.Location = new System.Drawing.Point(188, 105);
             this.negativeLabel.Name = "negativeLabel";
-            this.negativeLabel.Size = new System.Drawing.Size(128, 37);
+            this.negativeLabel.Size = new System.Drawing.Size(87, 25);
             this.negativeLabel.TabIndex = 28;
             this.negativeLabel.Text = "Negative ";
             // 
@@ -326,10 +319,9 @@
             this.equivocalTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.equivocalTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equivocalTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.equivocalTextBox.Location = new System.Drawing.Point(424, 208);
-            this.equivocalTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.equivocalTextBox.Location = new System.Drawing.Point(283, 135);
             this.equivocalTextBox.Name = "equivocalTextBox";
-            this.equivocalTextBox.Size = new System.Drawing.Size(118, 44);
+            this.equivocalTextBox.Size = new System.Drawing.Size(80, 32);
             this.equivocalTextBox.TabIndex = 30;
             // 
             // equivocalLabel
@@ -338,10 +330,9 @@
             this.equivocalLabel.BackColor = System.Drawing.Color.Transparent;
             this.equivocalLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equivocalLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.equivocalLabel.Location = new System.Drawing.Point(422, 162);
-            this.equivocalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.equivocalLabel.Location = new System.Drawing.Point(281, 105);
             this.equivocalLabel.Name = "equivocalLabel";
-            this.equivocalLabel.Size = new System.Drawing.Size(134, 37);
+            this.equivocalLabel.Size = new System.Drawing.Size(89, 25);
             this.equivocalLabel.TabIndex = 28;
             this.equivocalLabel.Text = "Equivocal";
             // 
@@ -350,10 +341,9 @@
             this.invalidTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.invalidTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invalidTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.invalidTextBox.Location = new System.Drawing.Point(556, 208);
-            this.invalidTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invalidTextBox.Location = new System.Drawing.Point(371, 135);
             this.invalidTextBox.Name = "invalidTextBox";
-            this.invalidTextBox.Size = new System.Drawing.Size(94, 44);
+            this.invalidTextBox.Size = new System.Drawing.Size(64, 32);
             this.invalidTextBox.TabIndex = 30;
             // 
             // invalidLabel
@@ -362,10 +352,9 @@
             this.invalidLabel.BackColor = System.Drawing.Color.Transparent;
             this.invalidLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invalidLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.invalidLabel.Location = new System.Drawing.Point(554, 162);
-            this.invalidLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.invalidLabel.Location = new System.Drawing.Point(369, 105);
             this.invalidLabel.Name = "invalidLabel";
-            this.invalidLabel.Size = new System.Drawing.Size(101, 37);
+            this.invalidLabel.Size = new System.Drawing.Size(67, 25);
             this.invalidLabel.TabIndex = 28;
             this.invalidLabel.Text = "Invalid";
             // 
@@ -374,10 +363,9 @@
             this.totalTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.totalTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.totalTextBox.Location = new System.Drawing.Point(36, 349);
-            this.totalTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.totalTextBox.Location = new System.Drawing.Point(24, 227);
             this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(272, 44);
+            this.totalTextBox.Size = new System.Drawing.Size(183, 32);
             this.totalTextBox.TabIndex = 30;
             // 
             // totalLabel
@@ -386,10 +374,9 @@
             this.totalLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.totalLabel.Location = new System.Drawing.Point(34, 306);
-            this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalLabel.Location = new System.Drawing.Point(23, 199);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(288, 37);
+            this.totalLabel.Size = new System.Drawing.Size(189, 25);
             this.totalLabel.TabIndex = 28;
             this.totalLabel.Text = "Total Tests Conducted";
             // 
@@ -398,10 +385,9 @@
             this.remainingTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.remainingTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.remainingTextBox.Location = new System.Drawing.Point(330, 349);
-            this.remainingTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.remainingTextBox.Location = new System.Drawing.Point(220, 227);
             this.remainingTextBox.Name = "remainingTextBox";
-            this.remainingTextBox.Size = new System.Drawing.Size(320, 44);
+            this.remainingTextBox.Size = new System.Drawing.Size(215, 32);
             this.remainingTextBox.TabIndex = 30;
             // 
             // remainingLabel
@@ -410,10 +396,9 @@
             this.remainingLabel.BackColor = System.Drawing.Color.Transparent;
             this.remainingLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainingLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.remainingLabel.Location = new System.Drawing.Point(327, 308);
-            this.remainingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.remainingLabel.Location = new System.Drawing.Point(218, 200);
             this.remainingLabel.Name = "remainingLabel";
-            this.remainingLabel.Size = new System.Drawing.Size(337, 37);
+            this.remainingLabel.Size = new System.Drawing.Size(222, 25);
             this.remainingLabel.TabIndex = 28;
             this.remainingLabel.Text = "Remaining Available Tests";
             // 
@@ -422,10 +407,9 @@
             this.textBox8.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox8.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.ForeColor = System.Drawing.Color.Gray;
-            this.textBox8.Location = new System.Drawing.Point(2314, 812);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox8.Location = new System.Drawing.Point(1543, 528);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(194, 44);
+            this.textBox8.Size = new System.Drawing.Size(131, 32);
             this.textBox8.TabIndex = 30;
             // 
             // label12
@@ -434,10 +418,9 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label12.Location = new System.Drawing.Point(42, 42);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(28, 27);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 37);
+            this.label12.Size = new System.Drawing.Size(78, 25);
             this.label12.TabIndex = 25;
             this.label12.Text = "Hospital";
             // 
@@ -447,10 +430,9 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label13.Location = new System.Drawing.Point(2307, 769);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(1538, 500);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(208, 37);
+            this.label13.Size = new System.Drawing.Size(136, 25);
             this.label13.TabIndex = 28;
             this.label13.Text = "Test Conducted";
             // 
@@ -464,10 +446,10 @@
             this.comboBox2.ForeColor = System.Drawing.Color.Gray;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.IntegralHeight = false;
-            this.comboBox2.Location = new System.Drawing.Point(44, 85);
+            this.comboBox2.Location = new System.Drawing.Point(29, 55);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(496, 45);
+            this.comboBox2.Size = new System.Drawing.Size(332, 33);
             this.comboBox2.TabIndex = 27;
             // 
             // dateLabel
@@ -476,10 +458,9 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dateLabel.Location = new System.Drawing.Point(42, 183);
-            this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dateLabel.Location = new System.Drawing.Point(28, 119);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(73, 37);
+            this.dateLabel.Size = new System.Drawing.Size(49, 25);
             this.dateLabel.TabIndex = 25;
             this.dateLabel.Text = "Date";
             // 
@@ -488,18 +469,19 @@
             this.dailyTestChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.dailyTestChart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.dailyTestChart.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
-            chartArea1.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend1);
-            this.dailyTestChart.Location = new System.Drawing.Point(3, 8);
+            chartArea3.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend3);
+            this.dailyTestChart.Location = new System.Drawing.Point(2, 5);
+            this.dailyTestChart.Margin = new System.Windows.Forms.Padding(2);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.dailyTestChart.Series.Add(series1);
-            this.dailyTestChart.Size = new System.Drawing.Size(1786, 469);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.dailyTestChart.Series.Add(series3);
+            this.dailyTestChart.Size = new System.Drawing.Size(1191, 305);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
             // 
@@ -508,24 +490,23 @@
             this.topPanel.BackColor = System.Drawing.Color.LightGray;
             this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.topPanel.Controls.Add(this.aboutUs);
+            this.topPanel.Controls.Add(this.endUs);
             this.topPanel.Controls.Add(this.pictureBox6);
             this.topPanel.Controls.Add(this.pictureBox4);
             this.topPanel.Controls.Add(this.pictureBox1);
             this.topPanel.Controls.Add(this.pictureBox5);
-            this.topPanel.Location = new System.Drawing.Point(-3, -3);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.topPanel.Location = new System.Drawing.Point(-2, -2);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1974, 49);
+            this.topPanel.Size = new System.Drawing.Size(1317, 33);
             this.topPanel.TabIndex = 52;
             // 
             // aboutUs
             // 
             this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.aboutUs.Image = global::PBL.Properties.Resources.ui;
-            this.aboutUs.Location = new System.Drawing.Point(1856, 2);
-            this.aboutUs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
             this.aboutUs.Name = "aboutUs";
-            this.aboutUs.Size = new System.Drawing.Size(70, 43);
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
             this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.aboutUs.TabIndex = 71;
             this.aboutUs.TabStop = false;
@@ -535,10 +516,9 @@
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(64, 5);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox6.Location = new System.Drawing.Point(43, 3);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
@@ -547,10 +527,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PBL.Properties.Resources.yellow_circle_button_blank_web_internet_icon_vector_13228674_removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(64, 5);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(43, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox4.Size = new System.Drawing.Size(23, 23);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
@@ -560,10 +539,9 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::PBL.Properties.Resources.green_circle_button_blank_web_internet_icon_vector_13228683_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(110, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(73, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -573,10 +551,9 @@
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::PBL.Properties.Resources.red_circle_button_blank_web_internet_icon_vector_13228666_removebg_preview;
-            this.pictureBox5.Location = new System.Drawing.Point(22, 5);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox5.Location = new System.Drawing.Point(15, 3);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox5.Size = new System.Drawing.Size(23, 23);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
@@ -593,10 +570,9 @@
             this.panel16.Controls.Add(this.casess);
             this.panel16.Controls.Add(this.pictureBox2);
             this.panel16.Controls.Add(this.pictureBox3);
-            this.panel16.Location = new System.Drawing.Point(36, 80);
-            this.panel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel16.Location = new System.Drawing.Point(24, 52);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(564, 266);
+            this.panel16.Size = new System.Drawing.Size(376, 173);
             this.panel16.TabIndex = 55;
             this.panel16.Visible = false;
             // 
@@ -605,10 +581,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(27, 172);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(18, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 25);
+            this.label6.Size = new System.Drawing.Size(35, 17);
             this.label6.TabIndex = 38;
             this.label6.Text = "map";
             // 
@@ -617,10 +592,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(148, 171);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(99, 111);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 25);
+            this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 38;
             this.label5.Text = "cases";
             // 
@@ -629,10 +603,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(290, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(193, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 25);
+            this.label4.Size = new System.Drawing.Size(38, 17);
             this.label4.TabIndex = 38;
             this.label4.Text = "tests";
             // 
@@ -641,10 +614,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(394, 171);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(263, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 25);
+            this.label3.Size = new System.Drawing.Size(81, 17);
             this.label3.TabIndex = 38;
             this.label3.Text = "equipments";
             // 
@@ -652,10 +624,9 @@
             // 
             this.map.Cursor = System.Windows.Forms.Cursors.Hand;
             this.map.Image = global::PBL.Properties.Resources.signs;
-            this.map.Location = new System.Drawing.Point(12, 75);
-            this.map.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.map.Location = new System.Drawing.Point(8, 49);
             this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(82, 77);
+            this.map.Size = new System.Drawing.Size(55, 50);
             this.map.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.map.TabIndex = 3;
             this.map.TabStop = false;
@@ -665,10 +636,9 @@
             // 
             this.casess.Cursor = System.Windows.Forms.Cursors.Hand;
             this.casess.Image = global::PBL.Properties.Resources.first_aid_kit;
-            this.casess.Location = new System.Drawing.Point(140, 75);
-            this.casess.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.casess.Location = new System.Drawing.Point(93, 49);
             this.casess.Name = "casess";
-            this.casess.Size = new System.Drawing.Size(82, 77);
+            this.casess.Size = new System.Drawing.Size(55, 50);
             this.casess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.casess.TabIndex = 3;
             this.casess.TabStop = false;
@@ -678,10 +648,9 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::PBL.Properties.Resources.medical;
-            this.pictureBox2.Location = new System.Drawing.Point(412, 75);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(275, 49);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 77);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -691,10 +660,9 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::PBL.Properties.Resources.tools_and_utensils;
-            this.pictureBox3.Location = new System.Drawing.Point(273, 75);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(182, 49);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 77);
+            this.pictureBox3.Size = new System.Drawing.Size(55, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -706,10 +674,9 @@
             this.dailyTestLabel.BackColor = System.Drawing.Color.Transparent;
             this.dailyTestLabel.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dailyTestLabel.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.dailyTestLabel.Location = new System.Drawing.Point(824, 586);
-            this.dailyTestLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dailyTestLabel.Location = new System.Drawing.Point(549, 381);
             this.dailyTestLabel.Name = "dailyTestLabel";
-            this.dailyTestLabel.Size = new System.Drawing.Size(313, 75);
+            this.dailyTestLabel.Size = new System.Drawing.Size(207, 48);
             this.dailyTestLabel.TabIndex = 8;
             this.dailyTestLabel.Text = "DAILY TESTS";
             // 
@@ -741,10 +708,9 @@
             this.cumulativePanel.Controls.Add(this.remainingTextBox);
             this.cumulativePanel.Controls.Add(this.totalTextBox);
             this.cumulativePanel.Controls.Add(this.hospitalComboBox);
-            this.cumulativePanel.Location = new System.Drawing.Point(74, 413);
-            this.cumulativePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cumulativePanel.Location = new System.Drawing.Point(49, 268);
             this.cumulativePanel.Name = "cumulativePanel";
-            this.cumulativePanel.Size = new System.Drawing.Size(690, 526);
+            this.cumulativePanel.Size = new System.Drawing.Size(460, 342);
             this.cumulativePanel.TabIndex = 58;
             this.cumulativePanel.Visible = false;
             // 
@@ -754,9 +720,10 @@
             this.saveButtonTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveButtonTest.Location = new System.Drawing.Point(36, 469);
+            this.saveButtonTest.Location = new System.Drawing.Point(24, 305);
+            this.saveButtonTest.Margin = new System.Windows.Forms.Padding(2);
             this.saveButtonTest.Name = "saveButtonTest";
-            this.saveButtonTest.Size = new System.Drawing.Size(616, 38);
+            this.saveButtonTest.Size = new System.Drawing.Size(411, 25);
             this.saveButtonTest.TabIndex = 68;
             this.saveButtonTest.Text = "Save";
             this.saveButtonTest.UseVisualStyleBackColor = false;
@@ -767,50 +734,45 @@
             // 
             this.equivocalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.equivocalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equivocalPanel.BackgroundImage")));
-            this.equivocalPanel.Location = new System.Drawing.Point(424, 268);
-            this.equivocalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.equivocalPanel.Location = new System.Drawing.Point(283, 174);
             this.equivocalPanel.Name = "equivocalPanel";
-            this.equivocalPanel.Size = new System.Drawing.Size(120, 15);
+            this.equivocalPanel.Size = new System.Drawing.Size(80, 10);
             this.equivocalPanel.TabIndex = 29;
             // 
             // invalidPanel
             // 
             this.invalidPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.invalidPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("invalidPanel.BackgroundImage")));
-            this.invalidPanel.Location = new System.Drawing.Point(556, 268);
-            this.invalidPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invalidPanel.Location = new System.Drawing.Point(371, 174);
             this.invalidPanel.Name = "invalidPanel";
-            this.invalidPanel.Size = new System.Drawing.Size(96, 15);
+            this.invalidPanel.Size = new System.Drawing.Size(64, 10);
             this.invalidPanel.TabIndex = 29;
             // 
             // negativePanel
             // 
             this.negativePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.negativePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("negativePanel.BackgroundImage")));
-            this.negativePanel.Location = new System.Drawing.Point(285, 269);
-            this.negativePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.negativePanel.Location = new System.Drawing.Point(190, 175);
             this.negativePanel.Name = "negativePanel";
-            this.negativePanel.Size = new System.Drawing.Size(128, 15);
+            this.negativePanel.Size = new System.Drawing.Size(85, 10);
             this.negativePanel.TabIndex = 29;
             // 
             // totalPanel
             // 
             this.totalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.totalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("totalPanel.BackgroundImage")));
-            this.totalPanel.Location = new System.Drawing.Point(38, 415);
-            this.totalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.totalPanel.Location = new System.Drawing.Point(25, 270);
             this.totalPanel.Name = "totalPanel";
-            this.totalPanel.Size = new System.Drawing.Size(274, 15);
+            this.totalPanel.Size = new System.Drawing.Size(183, 10);
             this.totalPanel.TabIndex = 29;
             // 
             // positivePanel
             // 
             this.positivePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.positivePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("positivePanel.BackgroundImage")));
-            this.positivePanel.Location = new System.Drawing.Point(168, 269);
-            this.positivePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.positivePanel.Location = new System.Drawing.Point(112, 175);
             this.positivePanel.Name = "positivePanel";
-            this.positivePanel.Size = new System.Drawing.Size(105, 15);
+            this.positivePanel.Size = new System.Drawing.Size(70, 10);
             this.positivePanel.TabIndex = 29;
             // 
             // hospitalPanel
@@ -818,39 +780,35 @@
             this.hospitalPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.hospitalPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hospitalPanel.BackgroundImage")));
             this.hospitalPanel.Controls.Add(this.panel8);
-            this.hospitalPanel.Location = new System.Drawing.Point(39, 123);
-            this.hospitalPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.hospitalPanel.Location = new System.Drawing.Point(26, 80);
             this.hospitalPanel.Name = "hospitalPanel";
-            this.hospitalPanel.Size = new System.Drawing.Size(614, 15);
+            this.hospitalPanel.Size = new System.Drawing.Size(409, 10);
             this.hospitalPanel.TabIndex = 26;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
-            this.panel8.Location = new System.Drawing.Point(0, -26);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Location = new System.Drawing.Point(0, -17);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(710, 15);
+            this.panel8.Size = new System.Drawing.Size(473, 10);
             this.panel8.TabIndex = 11;
             // 
             // remainingPanel
             // 
             this.remainingPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.remainingPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("remainingPanel.BackgroundImage")));
-            this.remainingPanel.Location = new System.Drawing.Point(332, 415);
-            this.remainingPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.remainingPanel.Location = new System.Drawing.Point(221, 270);
             this.remainingPanel.Name = "remainingPanel";
-            this.remainingPanel.Size = new System.Drawing.Size(322, 15);
+            this.remainingPanel.Size = new System.Drawing.Size(215, 10);
             this.remainingPanel.TabIndex = 29;
             // 
             // uniquePanel
             // 
             this.uniquePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.uniquePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uniquePanel.BackgroundImage")));
-            this.uniquePanel.Location = new System.Drawing.Point(38, 268);
-            this.uniquePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uniquePanel.Location = new System.Drawing.Point(25, 174);
             this.uniquePanel.Name = "uniquePanel";
-            this.uniquePanel.Size = new System.Drawing.Size(117, 15);
+            this.uniquePanel.Size = new System.Drawing.Size(78, 10);
             this.uniquePanel.TabIndex = 29;
             // 
             // conductedLabel
@@ -859,10 +817,9 @@
             this.conductedLabel.BackColor = System.Drawing.Color.Transparent;
             this.conductedLabel.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conductedLabel.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.conductedLabel.Location = new System.Drawing.Point(42, 323);
-            this.conductedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.conductedLabel.Location = new System.Drawing.Point(28, 210);
             this.conductedLabel.Name = "conductedLabel";
-            this.conductedLabel.Size = new System.Drawing.Size(208, 37);
+            this.conductedLabel.Size = new System.Drawing.Size(136, 25);
             this.conductedLabel.TabIndex = 61;
             this.conductedLabel.Text = "Test Conducted";
             // 
@@ -871,10 +828,9 @@
             this.conductedTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.conductedTextBox.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conductedTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.conductedTextBox.Location = new System.Drawing.Point(48, 368);
-            this.conductedTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.conductedTextBox.Location = new System.Drawing.Point(32, 239);
             this.conductedTextBox.Name = "conductedTextBox";
-            this.conductedTextBox.Size = new System.Drawing.Size(492, 44);
+            this.conductedTextBox.Size = new System.Drawing.Size(329, 32);
             this.conductedTextBox.TabIndex = 63;
             // 
             // testPanel
@@ -889,21 +845,29 @@
             this.testPanel.Controls.Add(this.comboBox2);
             this.testPanel.Controls.Add(this.dateLabel);
             this.testPanel.Controls.Add(this.datePanel);
-            this.testPanel.Location = new System.Drawing.Point(1232, 569);
-            this.testPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.testPanel.Location = new System.Drawing.Point(821, 370);
             this.testPanel.Name = "testPanel";
-            this.testPanel.Size = new System.Drawing.Size(618, 486);
+            this.testPanel.Size = new System.Drawing.Size(412, 316);
             this.testPanel.TabIndex = 65;
             this.testPanel.Visible = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(30, 153);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(328, 32);
+            this.dateTimePicker1.TabIndex = 64;
             // 
             // conductedPanel
             // 
             this.conductedPanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.conductedPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("conductedPanel.BackgroundImage")));
-            this.conductedPanel.Location = new System.Drawing.Point(46, 431);
-            this.conductedPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.conductedPanel.Location = new System.Drawing.Point(31, 280);
             this.conductedPanel.Name = "conductedPanel";
-            this.conductedPanel.Size = new System.Drawing.Size(494, 15);
+            this.conductedPanel.Size = new System.Drawing.Size(329, 10);
             this.conductedPanel.TabIndex = 62;
             // 
             // panel11
@@ -911,19 +875,17 @@
             this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(44, 151);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel11.Location = new System.Drawing.Point(29, 98);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(498, 15);
+            this.panel11.Size = new System.Drawing.Size(332, 10);
             this.panel11.TabIndex = 26;
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.DimGray;
-            this.panel12.Location = new System.Drawing.Point(0, -26);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel12.Location = new System.Drawing.Point(0, -17);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(710, 15);
+            this.panel12.Size = new System.Drawing.Size(473, 10);
             this.panel12.TabIndex = 11;
             // 
             // datePanel
@@ -931,19 +893,17 @@
             this.datePanel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.datePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("datePanel.BackgroundImage")));
             this.datePanel.Controls.Add(this.panel15);
-            this.datePanel.Location = new System.Drawing.Point(50, 292);
-            this.datePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.datePanel.Location = new System.Drawing.Point(33, 190);
             this.datePanel.Name = "datePanel";
-            this.datePanel.Size = new System.Drawing.Size(490, 15);
+            this.datePanel.Size = new System.Drawing.Size(327, 10);
             this.datePanel.TabIndex = 26;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.DimGray;
-            this.panel15.Location = new System.Drawing.Point(0, -26);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel15.Location = new System.Drawing.Point(0, -17);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(710, 15);
+            this.panel15.Size = new System.Drawing.Size(473, 10);
             this.panel15.TabIndex = 11;
             // 
             // closeTest
@@ -951,10 +911,9 @@
             this.closeTest.BackColor = System.Drawing.Color.Transparent;
             this.closeTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeTest.Image = global::PBL.Properties.Resources.more;
-            this.closeTest.Location = new System.Drawing.Point(1809, 635);
-            this.closeTest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.closeTest.Location = new System.Drawing.Point(1206, 413);
             this.closeTest.Name = "closeTest";
-            this.closeTest.Size = new System.Drawing.Size(64, 65);
+            this.closeTest.Size = new System.Drawing.Size(43, 42);
             this.closeTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.closeTest.TabIndex = 67;
             this.closeTest.TabStop = false;
@@ -965,10 +924,9 @@
             this.closeAdd.BackColor = System.Drawing.Color.Transparent;
             this.closeAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeAdd.Image = global::PBL.Properties.Resources.more;
-            this.closeAdd.Location = new System.Drawing.Point(38, 497);
-            this.closeAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.closeAdd.Location = new System.Drawing.Point(25, 323);
             this.closeAdd.Name = "closeAdd";
-            this.closeAdd.Size = new System.Drawing.Size(64, 65);
+            this.closeAdd.Size = new System.Drawing.Size(43, 42);
             this.closeAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.closeAdd.TabIndex = 59;
             this.closeAdd.TabStop = false;
@@ -979,10 +937,9 @@
             this.extend2.BackColor = System.Drawing.Color.Transparent;
             this.extend2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend2.Image = global::PBL.Properties.Resources._interface;
-            this.extend2.Location = new System.Drawing.Point(15, 65);
-            this.extend2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.extend2.Location = new System.Drawing.Point(10, 42);
             this.extend2.Name = "extend2";
-            this.extend2.Size = new System.Drawing.Size(57, 49);
+            this.extend2.Size = new System.Drawing.Size(38, 32);
             this.extend2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend2.TabIndex = 54;
             this.extend2.TabStop = false;
@@ -993,10 +950,9 @@
             this.extend1.BackColor = System.Drawing.Color.Transparent;
             this.extend1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extend1.Image = global::PBL.Properties.Resources._interface;
-            this.extend1.Location = new System.Drawing.Point(15, 65);
-            this.extend1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.extend1.Location = new System.Drawing.Point(10, 42);
             this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(57, 49);
+            this.extend1.Size = new System.Drawing.Size(38, 32);
             this.extend1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.extend1.TabIndex = 56;
             this.extend1.TabStop = false;
@@ -1006,10 +962,9 @@
             // 
             this.panel13.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.Location = new System.Drawing.Point(2314, 886);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel13.Location = new System.Drawing.Point(1543, 576);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(196, 15);
+            this.panel13.Size = new System.Drawing.Size(131, 10);
             this.panel13.TabIndex = 29;
             // 
             // openAdd
@@ -1017,10 +972,9 @@
             this.openAdd.BackColor = System.Drawing.Color.Transparent;
             this.openAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openAdd.Image = global::PBL.Properties.Resources.more;
-            this.openAdd.Location = new System.Drawing.Point(38, 497);
-            this.openAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.openAdd.Location = new System.Drawing.Point(25, 323);
             this.openAdd.Name = "openAdd";
-            this.openAdd.Size = new System.Drawing.Size(64, 65);
+            this.openAdd.Size = new System.Drawing.Size(43, 42);
             this.openAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.openAdd.TabIndex = 60;
             this.openAdd.TabStop = false;
@@ -1031,10 +985,9 @@
             this.openTest.BackColor = System.Drawing.Color.Transparent;
             this.openTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openTest.Image = global::PBL.Properties.Resources.more;
-            this.openTest.Location = new System.Drawing.Point(1809, 635);
-            this.openTest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.openTest.Location = new System.Drawing.Point(1206, 413);
             this.openTest.Name = "openTest";
-            this.openTest.Size = new System.Drawing.Size(64, 65);
+            this.openTest.Size = new System.Drawing.Size(43, 42);
             this.openTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.openTest.TabIndex = 66;
             this.openTest.TabStop = false;
@@ -1044,10 +997,9 @@
             // 
             this.mapShadow.BackColor = System.Drawing.Color.Transparent;
             this.mapShadow.Image = global::PBL.Properties.Resources.shadow;
-            this.mapShadow.Location = new System.Drawing.Point(10, 131);
-            this.mapShadow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mapShadow.Location = new System.Drawing.Point(7, 85);
             this.mapShadow.Name = "mapShadow";
-            this.mapShadow.Size = new System.Drawing.Size(1989, 477);
+            this.mapShadow.Size = new System.Drawing.Size(1326, 310);
             this.mapShadow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.mapShadow.TabIndex = 68;
             this.mapShadow.TabStop = false;
@@ -1058,39 +1010,42 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.dailyTestChart);
-            this.panel1.Location = new System.Drawing.Point(57, 658);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(38, 428);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1800, 487);
+            this.panel1.Size = new System.Drawing.Size(1201, 318);
             this.panel1.TabIndex = 70;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::PBL.Properties.Resources.Untitled2_202005230228171;
-            this.pictureBox7.Location = new System.Drawing.Point(30, 666);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox7.Location = new System.Drawing.Point(20, 433);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(1960, 546);
+            this.pictureBox7.Size = new System.Drawing.Size(1307, 355);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 69;
             this.pictureBox7.TabStop = false;
             // 
-            // dateTimePicker1
+            // endUs
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(50, 248);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(455, 26);
-            this.dateTimePicker1.TabIndex = 64;
+            this.endUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endUs.Image = global::PBL.Properties.Resources.ui;
+            this.endUs.Location = new System.Drawing.Point(1237, 1);
+            this.endUs.Name = "endUs";
+            this.endUs.Size = new System.Drawing.Size(47, 28);
+            this.endUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.endUs.TabIndex = 72;
+            this.endUs.TabStop = false;
+            this.endUs.Click += new System.EventHandler(this.endUs_Click);
             // 
             // Tests
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(47)))), ((int)(((byte)(70)))));
             this.BackgroundImage = global::PBL.Properties.Resources._7d235144ec8b8059c6e0b23c23425222;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1935, 1106);
+            this.ClientSize = new System.Drawing.Size(1290, 770);
             this.Controls.Add(this.closeTest);
             this.Controls.Add(this.testPanel);
             this.Controls.Add(this.closeAdd);
@@ -1112,7 +1067,6 @@
             this.Controls.Add(this.pictureBox7);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Tests";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tests";
@@ -1146,6 +1100,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mapShadow)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1230,5 +1185,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox aboutUs;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox endUs;
     }
 }

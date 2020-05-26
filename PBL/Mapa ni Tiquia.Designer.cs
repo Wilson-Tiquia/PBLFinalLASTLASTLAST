@@ -59,9 +59,10 @@
             this.totalCases = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.aboutUs = new System.Windows.Forms.PictureBox();
             this.minimize = new System.Windows.Forms.PictureBox();
             this.maximize = new System.Windows.Forms.PictureBox();
-            this.aboutUs = new System.Windows.Forms.PictureBox();
+            this.endUs = new System.Windows.Forms.PictureBox();
             this.hide = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -104,9 +105,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.provincePicture)).BeginInit();
             this.panel2.SuspendLayout();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).BeginInit();
             this.panel16.SuspendLayout();
@@ -529,15 +531,28 @@
             // 
             this.topPanel.BackColor = System.Drawing.Color.LightGray;
             this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.topPanel.Controls.Add(this.aboutUs);
             this.topPanel.Controls.Add(this.minimize);
             this.topPanel.Controls.Add(this.maximize);
-            this.topPanel.Controls.Add(this.aboutUs);
+            this.topPanel.Controls.Add(this.endUs);
             this.topPanel.Controls.Add(this.hide);
             this.topPanel.Controls.Add(this.exit);
             this.topPanel.Location = new System.Drawing.Point(-2, -2);
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1317, 33);
             this.topPanel.TabIndex = 53;
+            // 
+            // aboutUs
+            // 
+            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
+            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
+            this.aboutUs.Name = "aboutUs";
+            this.aboutUs.Size = new System.Drawing.Size(47, 28);
+            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutUs.TabIndex = 2;
+            this.aboutUs.TabStop = false;
+            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
             // 
             // minimize
             // 
@@ -562,17 +577,17 @@
             this.maximize.TabStop = false;
             this.maximize.Click += new System.EventHandler(this.maximize_Click);
             // 
-            // aboutUs
+            // endUs
             // 
-            this.aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.aboutUs.Image = global::PBL.Properties.Resources.ui;
-            this.aboutUs.Location = new System.Drawing.Point(1237, 1);
-            this.aboutUs.Name = "aboutUs";
-            this.aboutUs.Size = new System.Drawing.Size(47, 28);
-            this.aboutUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.aboutUs.TabIndex = 2;
-            this.aboutUs.TabStop = false;
-            this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
+            this.endUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endUs.Image = global::PBL.Properties.Resources.ui;
+            this.endUs.Location = new System.Drawing.Point(1237, 1);
+            this.endUs.Name = "endUs";
+            this.endUs.Size = new System.Drawing.Size(47, 28);
+            this.endUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.endUs.TabIndex = 2;
+            this.endUs.TabStop = false;
+            this.endUs.Click += new System.EventHandler(this.endUs_Click);
             // 
             // hide
             // 
@@ -1005,9 +1020,10 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit)).EndInit();
             this.panel16.ResumeLayout(false);
@@ -1106,5 +1122,6 @@
         private System.Windows.Forms.PictureBox mapShadow;
         private System.Windows.Forms.PictureBox aboutUs;
         private System.Windows.Forms.PictureBox backMap;
+        private System.Windows.Forms.PictureBox endUs;
     }
 }

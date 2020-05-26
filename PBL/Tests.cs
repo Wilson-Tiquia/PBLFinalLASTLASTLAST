@@ -359,7 +359,7 @@ namespace PBL
         private void Tests_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
+            //WindowState = FormWindowState.Maximized;
             string selectedHospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
             if (selectedHospital == string.Empty)
             {
@@ -367,11 +367,6 @@ namespace PBL
             }
             populateHospitals();
           
-        }
-        private void aboutUs_Click(object sender, EventArgs e)
-        {
-            SplashScreen aboutForm = new SplashScreen();
-            aboutForm.Show();
         }
 
         private void saveButtonTest_Click_1(object sender, EventArgs e)
@@ -454,6 +449,21 @@ namespace PBL
         private void mapShadow_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void aboutUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Show();
+            aboutUs.Visible = false;
+            endUs.Visible = true;
+        }
+        private void endUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Visible = false;
+            aboutUs.Visible = true;
+            endUs.Visible = false;
         }
     }
 }

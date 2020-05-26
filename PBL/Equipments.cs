@@ -567,9 +567,17 @@ namespace PBL
 
         private void aboutUs_Click(object sender, EventArgs e)
         {
-                SplashScreen aboutForm = new SplashScreen();
-                aboutForm.Show();
-            
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Show();
+            aboutUs.Visible = false;
+            endUs.Visible = true;
+        }
+        private void endUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Visible = false;
+            aboutUs.Visible = true;
+            endUs.Visible = false;
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.border = new System.Windows.Forms.Panel();
             this.aboutUs = new System.Windows.Forms.PictureBox();
+            this.endUs = new System.Windows.Forms.PictureBox();
             this.hideButton = new System.Windows.Forms.PictureBox();
             this.minimizeButton = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.PictureBox();
@@ -53,6 +54,7 @@
             this.headerPicture = new System.Windows.Forms.PictureBox();
             this.border.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -73,6 +75,7 @@
             this.border.BackColor = System.Drawing.Color.LightGray;
             this.border.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.border.Controls.Add(this.aboutUs);
+            this.border.Controls.Add(this.endUs);
             this.border.Controls.Add(this.hideButton);
             this.border.Controls.Add(this.minimizeButton);
             this.border.Controls.Add(this.exitButton);
@@ -93,6 +96,18 @@
             this.aboutUs.TabIndex = 3;
             this.aboutUs.TabStop = false;
             this.aboutUs.Click += new System.EventHandler(this.aboutUs_Click);
+            // 
+            // endUs
+            // 
+            this.endUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endUs.Image = global::PBL.Properties.Resources.ui;
+            this.endUs.Location = new System.Drawing.Point(1237, 1);
+            this.endUs.Name = "endUs";
+            this.endUs.Size = new System.Drawing.Size(47, 28);
+            this.endUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.endUs.TabIndex = 3;
+            this.endUs.TabStop = false;
+            this.endUs.Click += new System.EventHandler(this.endUs_Click);
             // 
             // hideButton
             // 
@@ -371,6 +386,7 @@
             this.Text = "Homepage";
             this.border.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hideButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
@@ -416,5 +432,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox headerPicture;
         private System.Windows.Forms.PictureBox aboutUs;
+        private System.Windows.Forms.PictureBox endUs;
     }
 }
