@@ -15,45 +15,7 @@ namespace PBL
    
     public partial class Tests : Form
     {
-        
-
-        public void populateHospitals()
-        {
-            List<string> hospitals = new List<string>();
-            hospitals.Add("RESEARCH INSTITUTE FOR TROPICAL MEDICINE (RITM)");
-            hospitals.Add("PHILIPPINE RED CROSS (PRC)");
-            hospitals.Add("PHILIPPINE RED CROSS LOGISTICS & MULTIPURPOSE CENTER");
-            hospitals.Add("VICENTE SOTTO MEMORIAL MEDICAL CENTER (VSMMC)");
-            hospitals.Add("LUNG CENTER OF THE PHILIPPINES(LCP)");
-            hospitals.Add("BAGUIO GENERAL HOSPITAL AND MEDICAL CENTER (BGHMC)");
-            hospitals.Add("SAN LAZARO HOSPITAL (SLH)");
-            hospitals.Add("UP NATIONAL INSTITUTES OF HEALTH (UP-NIH)");
-            hospitals.Add("WESTERN VISAYAS MEDICAL CENTER");
-            hospitals.Add("ST.LUKE’S MEDICAL CENTER - BGC(SLMC - BGC)");
-            hospitals.Add("DETOXICARE MOLECULAR DIAGNOSTICS LABORATORY");
-            hospitals.Add("SOUTHERN PHILIPPINES MEDICAL CENTER(SPMC)");
-            hospitals.Add("CHINESE GENERAL HOSPITAL (CGH)");
-            hospitals.Add("THE MEDICAL CITY(TMC)");
-            hospitals.Add("MAKATI MEDICAL CENTER");
-            hospitals.Add("V.LUNA HOSPITAL");
-            hospitals.Add("SINGAPORE DIAGNOSTICS");
-            hospitals.Add("PHILIPPINE GENOME CENTER");
-            hospitals.Add("MARIKINA MOLECULAR DIAGNOSTICS LIBRARY");
-            hospitals.Add("DE LA SALLE UNIVERSITY - CAVITE");
-            hospitals.Add("ZAMBOANGA CITY MEDICAL CENTER GENEXPERT LABORATORY");
-            hospitals.Add("LUNG CENTER OF THE PHILIPPINES GENEXPERT LABORATORY");
-            hospitals.Add("CEBU TB REFERENCE LABORATORY");
-            hospitals.Add("UP-PGH MOLECULAR LABORATORY");
-            hospitals.Add("EASTERN VISAYAS REGIONAL COVID TESTING CENTER");
-            hospitals.Add("ALLEGIANT REGIONAL CARE HOSPITAL");
-           
-            for (int i =0; i <hospitals.Count;i++)
-            {
-                hospitalComboBox.Items.Add(hospitals[i]);
-            }
-        }
-
-
+    
         public Tests()
         {
             InitializeComponent();
@@ -318,8 +280,6 @@ namespace PBL
                 }
             }
             sorter.Close();
-
-
         }
 
         private void hospitalComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -331,7 +291,6 @@ namespace PBL
         {
             StreamReader allHospitals = new StreamReader(@"C:/Cumulative-Tests.txt");
             allHospitals.ReadLine();
-            
             while (allHospitals.Peek()!=-1)
             {
                 string allDetails = allHospitals.ReadLine();
@@ -365,7 +324,7 @@ namespace PBL
             {
                 allHospitals();
             }
-            populateHospitals();
+            
           
         }
 
@@ -377,8 +336,7 @@ namespace PBL
             }
             else
             {
-                StreamWriter addTests = new StreamWriter(@"C:/Cumulative-Tests.txt", true);
-                string hospital = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
+                string selectedHospitalName = hospitalComboBox.GetItemText(hospitalComboBox.SelectedItem);
                 string empty = "0";
                 // check condition if walang laman set mo sa 0
                 if (uniqueTextBox.Text == string.Empty)
@@ -409,31 +367,63 @@ namespace PBL
                 {
                     remainingTextBox.Text = empty;
                 }
-                for (int i  =0; i < hospitalComboBox.Items.Count - 1; i++) 
+                StreamReader cumulativeDetails = new StreamReader(@"C:/Cumulative-Tests.txt");
+                cumulativeDetails.ReadLine();
+                while (cumulativeDetails.Peek()!=-1)
                 {
-                    if (hospital == hospitalComboBox.GetItemText(hospitalComboBox.Items[i]))
+                    string read = cumulativeDetails.ReadLine();
+                    string[] splitDetails = read.Split(',');
+                    string hospitalName = splitDetails[0];
+                 
+
+                   
+                    if (selectedHospitalName == hospitalName)
                     {
-                        Console.WriteLine("meron na");
+                        StreamWriter write = new StreamWriter(@"C:/last/test2.txt", true);
+                        int unique = int.Parse(splitDetails[1]);
+                        int positive = int.Parse(splitDetails[2]);
+                        int negative = int.Parse(splitDetails[3]);
+                        int equivocal = int.Parse(splitDetails[4]);
+                        int invalid = int.Parse(splitDetails[5]);
+                        int total = int.Parse(splitDetails[6]);
+                        int remaining = int.Parse(splitDetails[7]);
+                        unique += int.Parse(uniqueTextBox.Text);
+                        positive += int.Parse(positiveTextBox.Text);
+                        negative += int.Parse(negativeTextBox.Text);
+                        equivocal+= int.Parse(equivocalTextBox.Text);
+                        invalid += int.Parse(invalidTextBox.Text);
+                        total += int.Parse(totalTextBox.Text);
+                        remaining += int.Parse(remainingTextBox.Text);
+                        string uniqueStr = unique.ToString();
+                        string positiveStr = positive.ToString();
+                        string negativeStr = negative.ToString();
+                        string equivocalStr = equivocal.ToString();
+                        string invalidStr = invalid.ToString();
+                        string totalStr = total.ToString();
+                        string remainingStr = remaining.ToString();
+                        write.WriteLine($"{selectedHospitalName},{uniqueStr},{positiveStr},{negativeStr},{equivocalStr},{invalidStr},{totalStr},{remainingStr}");
+                        write.Close();
+
+
 
                     }
-                    else
-                    {
-                        Console.WriteLine("wala pa po ");
-                    }
-                  
+
+
+
                 }
-                // i write line mo sa file
+
+
                 MessageBox.Show("ADDED TESTS");
-                string[] all = { hospitalComboBox.Text, ",", uniqueTextBox.Text, ",", positiveTextBox.Text, ",", negativeTextBox.Text, ",", equivocalTextBox.Text, ",", invalidTextBox.Text, ",", totalTextBox.Text, ",", remainingTextBox.Text };
-                addTests.WriteLine();
-                for (int i = 0; i < all.Length; i++)
-                {
-                    addTests.Write(all[i]);
-                }
-                addTests.Close();
-                listView1.Items.Clear();
-                clearEntries();
-                allHospitals();
+                //string[] all = { hospitalComboBox.Text, ",", uniqueTextBox.Text, ",", positiveTextBox.Text, ",", negativeTextBox.Text, ",", equivocalTextBox.Text, ",", invalidTextBox.Text, ",", totalTextBox.Text, ",", remainingTextBox.Text };
+                //addTests.WriteLine();
+                //for (int i = 0; i < all.Length; i++)
+                //{
+                //    addTests.Write(all[i]);
+                //}
+                //addTests.Close();
+                //listView1.Items.Clear();
+                //clearEntries();
+                //allHospitals();
               
             }
 
