@@ -5,6 +5,7 @@ using System.Text;
 using System.Net;
 using System.Drawing;
 using System.Runtime.Remoting.Channels;
+using System.Runtime.CompilerServices;
 
 namespace PBL
 {
@@ -687,6 +688,15 @@ namespace PBL
         {
             SplashScreen aboutForm = new SplashScreen();
             aboutForm.Show();
+            aboutUs.Visible = false;
+            endUs.Visible = true;
+        }
+        private void endUs_Click(object sender, EventArgs e)
+        {
+            SplashScreen aboutForm = new SplashScreen();
+            aboutForm.Visible = false;
+            aboutUs.Visible = true;
+            endUs.Visible = false;
         }
     }
 }

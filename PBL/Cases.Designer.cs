@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.recoveredDeathPanel = new System.Windows.Forms.Panel();
             this.recoveredDeathChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label11 = new System.Windows.Forms.Label();
@@ -86,6 +86,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.provinceCityComboBox = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.endUs = new System.Windows.Forms.PictureBox();
             this.recoveredDeathPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recoveredDeathChart)).BeginInit();
             this.deathCasesPanel.SuspendLayout();
@@ -107,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).BeginInit();
             this.SuspendLayout();
             // 
             // recoveredDeathPanel
@@ -129,21 +131,21 @@
             // 
             this.recoveredDeathChart.BackColor = System.Drawing.Color.Transparent;
             this.recoveredDeathChart.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.recoveredDeathChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.recoveredDeathChart.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.recoveredDeathChart.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.recoveredDeathChart.Legends.Add(legend5);
             this.recoveredDeathChart.Location = new System.Drawing.Point(955, 14);
             this.recoveredDeathChart.Name = "recoveredDeathChart";
             this.recoveredDeathChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Deaths";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Recovered";
-            this.recoveredDeathChart.Series.Add(series1);
-            this.recoveredDeathChart.Series.Add(series2);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Deaths";
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Recovered";
+            this.recoveredDeathChart.Series.Add(series9);
+            this.recoveredDeathChart.Series.Add(series10);
             this.recoveredDeathChart.Size = new System.Drawing.Size(321, 147);
             this.recoveredDeathChart.TabIndex = 9;
             this.recoveredDeathChart.Text = "chart1";
@@ -421,6 +423,7 @@
             this.border.BackColor = System.Drawing.Color.LightGray;
             this.border.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.border.Controls.Add(this.aboutUs);
+            this.border.Controls.Add(this.endUs);
             this.border.Controls.Add(this.minimizeButton);
             this.border.Controls.Add(this.maximizeButton);
             this.border.Controls.Add(this.hideButton);
@@ -744,6 +747,18 @@
             this.comboBox1.TabIndex = 41;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.regionComboBox_SelectedIndexChanged);
             // 
+            // endUs
+            // 
+            this.endUs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.endUs.Image = global::PBL.Properties.Resources.ui;
+            this.endUs.Location = new System.Drawing.Point(1237, 1);
+            this.endUs.Name = "endUs";
+            this.endUs.Size = new System.Drawing.Size(47, 28);
+            this.endUs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.endUs.TabIndex = 72;
+            this.endUs.TabStop = false;
+            this.endUs.Click += new System.EventHandler(this.endUs_Click);
+            // 
             // Cases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -805,6 +820,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.extend2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.extend1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.endUs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -867,6 +883,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox aboutUs;
+        private System.Windows.Forms.PictureBox endUs;
         //  private System.Windows.Forms.ComboBox comboBox2;
     }
 }
