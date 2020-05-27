@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tests));
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -71,6 +71,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -81,7 +90,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dailyTestLabel = new System.Windows.Forms.Label();
             this.cumulativePanel = new System.Windows.Forms.Panel();
-            this.saveButtonTest = new System.Windows.Forms.Button();
+            this.uploadToCloud = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.equivocalPanel = new System.Windows.Forms.Panel();
             this.invalidPanel = new System.Windows.Forms.Panel();
             this.negativePanel = new System.Windows.Forms.Panel();
@@ -94,6 +105,7 @@
             this.conductedLabel = new System.Windows.Forms.Label();
             this.conductedTextBox = new System.Windows.Forms.TextBox();
             this.testPanel = new System.Windows.Forms.Panel();
+            this.openFileTestConducted = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.conductedPanel = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -110,6 +122,12 @@
             this.mapShadow = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.uploadSelected = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dailyTestChart)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aboutUs)).BeginInit();
@@ -170,7 +188,7 @@
             this.listView1.Location = new System.Drawing.Point(74, 140);
             this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1776, 402);
+            this.listView1.Size = new System.Drawing.Size(1809, 402);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -240,37 +258,6 @@
             this.hospitalComboBox.FormattingEnabled = true;
             this.hospitalComboBox.IntegralHeight = false;
             this.hospitalComboBox.ItemHeight = 37;
-            this.hospitalComboBox.Items.AddRange(new object[] {
-            "ALLEGIANT REGIONAL CARE HOSPITAL",
-            "BAGUIO GENERAL HOSPITAL AND MEDICAL CENTER (BGHMC)",
-            "BICOL REGIONAL DIAGNOSTIC AND REFERENCE LABORATORY (BRDRL)",
-            "BICOL REGIONAL DIAGNOSTIC AND REFERENCE LABORATORY (BRDRL)",
-            "CEBU TB REFERENCE LABORATORY",
-            "CHINESE GENERAL HOSPITAL (CGH)",
-            "DE LA SALLE UNIVERSITY - CAVITE",
-            "DETOXICARE MOLECULAR DIAGNOSTICS LABORATORY",
-            "EASTERN VISAYAS REGIONAL COVID TESTING CENTER",
-            "JOSE B. LINGAD MEMORIAL REGIONAL HOSPITAL",
-            "LUNG CENTER OF THE PHILIPPINES (LCP)",
-            "LUNG CENTER OF THE PHILIPPINES GENEXPERT LABORATORY",
-            "MAKATI MEDICAL CENTER",
-            "MARIKINA MOLECULAR DIAGNOSTICS LIBRARY",
-            "PHILIPPINE GENOME CENTER",
-            "PHILIPPINE RED CROSS (PRC)",
-            "PHILIPPINE RED CROSS LOGISTICS & MULTIPURPOSE CENTER",
-            "RESEARCH INSTITUTE FOR TROPICAL MEDICINE (RITM)",
-            "SAN LAZARO HOSPITAL (SLH)",
-            "SINGAPORE DIAGNOSTICS",
-            "SOUTHERN PHILIPPINES MEDICAL CENTER (SPMC)",
-            "ST. LUKE’S MEDICAL CENTER - BGC (SLMC-BGC)",
-            "ST. LUKE’S MEDICAL CENTER - QUEZON CITY (SLMC-QC)",
-            "THE MEDICAL CITY (TMC)",
-            "UP-PGH MOLECULAR LABORATORY",
-            "UP NATIONAL INSTITUTES OF HEALTH (UP-NIH)",
-            "V.LUNA HOSPITAL",
-            "VICENTE SOTTO MEMORIAL MEDICAL CENTER (VSMMC)",
-            "WESTERN VISAYAS MEDICAL CENTER",
-            "ZAMBOANGA CITY MEDICAL CENTER GENEXPERT LABORATORY"});
             this.hospitalComboBox.Location = new System.Drawing.Point(39, 66);
             this.hospitalComboBox.Margin = new System.Windows.Forms.Padding(0);
             this.hospitalComboBox.Name = "hospitalComboBox";
@@ -500,6 +487,8 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(496, 45);
             this.comboBox2.TabIndex = 27;
+            this.comboBox2.DropDown += new System.EventHandler(this.comboBox2_DropDown);
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // dateLabel
             // 
@@ -519,18 +508,18 @@
             this.dailyTestChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(172)))), ((int)(((byte)(165)))));
             this.dailyTestChart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             this.dailyTestChart.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(179)))), ((int)(((byte)(204)))));
-            chartArea2.Name = "ChartArea1";
-            this.dailyTestChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.dailyTestChart.Legends.Add(legend2);
-            this.dailyTestChart.Location = new System.Drawing.Point(3, 8);
+            chartArea15.Name = "ChartArea1";
+            this.dailyTestChart.ChartAreas.Add(chartArea15);
+            legend15.Name = "Legend1";
+            this.dailyTestChart.Legends.Add(legend15);
+            this.dailyTestChart.Location = new System.Drawing.Point(-2, -2);
             this.dailyTestChart.Name = "dailyTestChart";
             this.dailyTestChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.dailyTestChart.Series.Add(series2);
-            this.dailyTestChart.Size = new System.Drawing.Size(1786, 469);
+            series15.ChartArea = "ChartArea1";
+            series15.Legend = "Legend1";
+            series15.Name = "Date";
+            this.dailyTestChart.Series.Add(series15);
+            this.dailyTestChart.Size = new System.Drawing.Size(1786, 423);
             this.dailyTestChart.TabIndex = 33;
             this.dailyTestChart.Text = "chart1";
             // 
@@ -616,6 +605,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.DimGray;
+            this.panel16.Controls.Add(this.listView2);
             this.panel16.Controls.Add(this.label6);
             this.panel16.Controls.Add(this.label5);
             this.panel16.Controls.Add(this.label4);
@@ -630,6 +620,72 @@
             this.panel16.Size = new System.Drawing.Size(564, 266);
             this.panel16.TabIndex = 55;
             this.panel16.Visible = false;
+            // 
+            // listView2
+            // 
+            this.listView2.BackColor = System.Drawing.Color.SlateGray;
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16});
+            this.listView2.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView2.ForeColor = System.Drawing.SystemColors.Info;
+            this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(21, 60);
+            this.listView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(1776, 402);
+            this.listView2.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listView2.TabIndex = 71;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.Visible = false;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Hospital";
+            this.columnHeader7.Width = 243;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Unique Individuals";
+            this.columnHeader10.Width = 166;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Positive Individuals";
+            this.columnHeader11.Width = 152;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Negative Indivuduals";
+            this.columnHeader12.Width = 138;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Equivocal";
+            this.columnHeader13.Width = 89;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Invalid";
+            this.columnHeader14.Width = 66;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Total Tests Conducted";
+            this.columnHeader15.Width = 144;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Remaining Available Tests";
+            this.columnHeader16.Width = 214;
             // 
             // label6
             // 
@@ -747,8 +803,11 @@
             // cumulativePanel
             // 
             this.cumulativePanel.BackColor = System.Drawing.Color.SlateGray;
+            this.cumulativePanel.Controls.Add(this.uploadSelected);
+            this.cumulativePanel.Controls.Add(this.uploadToCloud);
+            this.cumulativePanel.Controls.Add(this.openFile);
             this.cumulativePanel.Controls.Add(this.hospitalLabel);
-            this.cumulativePanel.Controls.Add(this.saveButtonTest);
+            this.cumulativePanel.Controls.Add(this.saveButton);
             this.cumulativePanel.Controls.Add(this.uniqueTextBox);
             this.cumulativePanel.Controls.Add(this.equivocalPanel);
             this.cumulativePanel.Controls.Add(this.invalidPanel);
@@ -775,24 +834,54 @@
             this.cumulativePanel.Location = new System.Drawing.Point(74, 413);
             this.cumulativePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cumulativePanel.Name = "cumulativePanel";
-            this.cumulativePanel.Size = new System.Drawing.Size(690, 526);
+            this.cumulativePanel.Size = new System.Drawing.Size(690, 602);
             this.cumulativePanel.TabIndex = 58;
             this.cumulativePanel.Visible = false;
             // 
-            // saveButtonTest
+            // uploadToCloud
             // 
-            this.saveButtonTest.BackColor = System.Drawing.Color.DimGray;
-            this.saveButtonTest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveButtonTest.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButtonTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveButtonTest.Location = new System.Drawing.Point(36, 469);
-            this.saveButtonTest.Name = "saveButtonTest";
-            this.saveButtonTest.Size = new System.Drawing.Size(616, 38);
-            this.saveButtonTest.TabIndex = 68;
-            this.saveButtonTest.Text = "Save";
-            this.saveButtonTest.UseVisualStyleBackColor = false;
-            this.saveButtonTest.Visible = false;
-            this.saveButtonTest.Click += new System.EventHandler(this.saveButtonTest_Click_1);
+            this.uploadToCloud.BackColor = System.Drawing.Color.DimGray;
+            this.uploadToCloud.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadToCloud.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadToCloud.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.uploadToCloud.Location = new System.Drawing.Point(34, 532);
+            this.uploadToCloud.Name = "uploadToCloud";
+            this.uploadToCloud.Size = new System.Drawing.Size(616, 38);
+            this.uploadToCloud.TabIndex = 69;
+            this.uploadToCloud.Text = "Upload to Cloud";
+            this.uploadToCloud.UseVisualStyleBackColor = false;
+            this.uploadToCloud.Visible = false;
+            this.uploadToCloud.Click += new System.EventHandler(this.uploadToCloud_Click);
+            // 
+            // openFile
+            // 
+            this.openFile.BackColor = System.Drawing.Color.DimGray;
+            this.openFile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openFile.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openFile.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.openFile.Location = new System.Drawing.Point(36, 484);
+            this.openFile.Name = "openFile";
+            this.openFile.Size = new System.Drawing.Size(616, 38);
+            this.openFile.TabIndex = 68;
+            this.openFile.Text = "Open File";
+            this.openFile.UseVisualStyleBackColor = false;
+            this.openFile.Visible = false;
+            this.openFile.Click += new System.EventHandler(this.openFile_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.BackColor = System.Drawing.Color.DimGray;
+            this.saveButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.saveButton.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveButton.Location = new System.Drawing.Point(34, 438);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(616, 38);
+            this.saveButton.TabIndex = 68;
+            this.saveButton.Text = "SAVE";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Visible = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // equivocalPanel
             // 
@@ -907,10 +996,16 @@
             this.conductedTextBox.Name = "conductedTextBox";
             this.conductedTextBox.Size = new System.Drawing.Size(492, 44);
             this.conductedTextBox.TabIndex = 63;
+            this.conductedTextBox.TextChanged += new System.EventHandler(this.conductedTextBox_TextChanged);
+            this.conductedTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.conductedTextBox_KeyDown);
             // 
             // testPanel
             // 
             this.testPanel.BackColor = System.Drawing.Color.SlateGray;
+            this.testPanel.Controls.Add(this.radioButton3);
+            this.testPanel.Controls.Add(this.radioButton2);
+            this.testPanel.Controls.Add(this.radioButton1);
+            this.testPanel.Controls.Add(this.openFileTestConducted);
             this.testPanel.Controls.Add(this.dateTimePicker1);
             this.testPanel.Controls.Add(this.label12);
             this.testPanel.Controls.Add(this.conductedLabel);
@@ -923,9 +1018,24 @@
             this.testPanel.Location = new System.Drawing.Point(1232, 569);
             this.testPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.testPanel.Name = "testPanel";
-            this.testPanel.Size = new System.Drawing.Size(618, 486);
+            this.testPanel.Size = new System.Drawing.Size(618, 529);
             this.testPanel.TabIndex = 65;
             this.testPanel.Visible = false;
+            // 
+            // openFileTestConducted
+            // 
+            this.openFileTestConducted.BackColor = System.Drawing.Color.DimGray;
+            this.openFileTestConducted.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openFileTestConducted.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openFileTestConducted.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.openFileTestConducted.Location = new System.Drawing.Point(33, 454);
+            this.openFileTestConducted.Name = "openFileTestConducted";
+            this.openFileTestConducted.Size = new System.Drawing.Size(535, 38);
+            this.openFileTestConducted.TabIndex = 69;
+            this.openFileTestConducted.Text = "Open File";
+            this.openFileTestConducted.UseVisualStyleBackColor = false;
+            this.openFileTestConducted.Visible = false;
+            this.openFileTestConducted.Click += new System.EventHandler(this.openFileTestConducted_Click);
             // 
             // dateTimePicker1
             // 
@@ -1114,6 +1224,65 @@
             this.pictureBox7.TabIndex = 69;
             this.pictureBox7.TabStop = false;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            // 
+            // uploadSelected
+            // 
+            this.uploadSelected.BackColor = System.Drawing.Color.DimGray;
+            this.uploadSelected.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadSelected.Font = new System.Drawing.Font("Impact", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadSelected.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.uploadSelected.Location = new System.Drawing.Point(34, 532);
+            this.uploadSelected.Name = "uploadSelected";
+            this.uploadSelected.Size = new System.Drawing.Size(616, 38);
+            this.uploadSelected.TabIndex = 70;
+            this.uploadSelected.Text = "Upload to Cloud";
+            this.uploadSelected.UseVisualStyleBackColor = false;
+            this.uploadSelected.Visible = false;
+            this.uploadSelected.Click += new System.EventHandler(this.uploadSelected_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(44, 501);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(142, 24);
+            this.radioButton1.TabIndex = 70;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Show X Values";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(204, 502);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(226, 24);
+            this.radioButton2.TabIndex = 71;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Show Both X and Y Values";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(453, 502);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(148, 24);
+            this.radioButton3.TabIndex = 72;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Show Bar Value";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
             // Tests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1255,11 +1424,29 @@
         private System.Windows.Forms.Panel testPanel;
         private System.Windows.Forms.PictureBox openTest;
         private System.Windows.Forms.PictureBox closeTest;
-        private System.Windows.Forms.Button saveButtonTest;
+        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.PictureBox mapShadow;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox aboutUs;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button openFile;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button openFileTestConducted;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.Button uploadToCloud;
+        private System.Windows.Forms.Button uploadSelected;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
